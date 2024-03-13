@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- not showed up in Your site (link style) -->
+  <head>
+    <!-- will change the title of your website appear in the top of your browser -->
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <h2>CatPhotoApp</h2>
+    <main>
+      <p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>.
+      <img
+          src="https://get.pxhere.com/photo/animal-pet-kitten-cat-small-mammal-fauna-heal-blue-eye-close-up-nose-whiskers-vertebrate-domestic-lying-tabby-cat-norwegian-forest-cat-ginger-fur-small-to-medium-sized-cats-cat-like-mammal-carnivoran-domestic-short-haired-cat-domestic-long-haired-cat-609263.jpg"
+          alt="A cute orange cat">
+
+      <h3>Cat Lists</h3>
+
+      <div class="lists">
+        <p>Things cats <em>love</em>:</p>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <img src="./pictures/lasagna.jpg" alt="lasagna">
+        <p>Things cats <strong>hate</strong>:</p>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+      </div>
+
+      <img src="./pictures/cats.jpg" alt="Cats">
+      <form action="/submit-cat-photo">
+
+        <label><input id="indoor" type="radio" name="indoor-outdoor" checked>Indoor
+        </label><br>
+        <label><input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
+        </label><br>
+
+        <label for="loving">
+          <input type="checkbox" name="personality" id="loving" checked>Loving
+        </label><br>
+        <label for="lazy">
+          <input type="checkbox" name="personality" id="lazy">Lazy
+        </label><br>
+        <label for="energetic">
+          <input type="checkbox" name="personality" id="energetic">Energetic
+        </label><br>
+
+        <input type="text" placeholder="cat photo URL" required><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p><small>No Copyright - <a href="freeCodeCamp.org">freeCodeCamp.org</a></small></p>
+    </footer>
+  </body>
+</html>

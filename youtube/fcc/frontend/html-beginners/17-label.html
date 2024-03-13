@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>CatPhotoApp</h2>
+    <main>
+      <p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>.
+      <img
+          src="https://get.pxhere.com/photo/animal-pet-kitten-cat-small-mammal-fauna-heal-blue-eye-close-up-nose-whiskers-vertebrate-domestic-lying-tabby-cat-norwegian-forest-cat-ginger-fur-small-to-medium-sized-cats-cat-like-mammal-carnivoran-domestic-short-haired-cat-domestic-long-haired-cat-609263.jpg"
+          alt="A cute orange cat">
+      <h3>Cat Lists</h3>
+      <p>Things cats <em>love</em>:</p>
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <img src="./pictures/lasagna.jpg" alt="lasagna">
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <img src="./pictures/cats.jpg" alt="Cats">
+      <form action="/submit-cat-photo">
+        <!-- When You click the values of inpput tag (indoor or outdoor) It will select the button too -->
+        <label><input type="radio"> indoor
+        </label>
+        <label><input type="radio"> outdoor
+        </label>
+        <button type="submit">Submit</button>
+        <input type="text" placeholder="cat photo URL" required>
+      </form>
+    </main>
+  </body>
+</html>
