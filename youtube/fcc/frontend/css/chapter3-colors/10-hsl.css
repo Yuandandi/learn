@@ -1,0 +1,22 @@
+/* color: hsl(hue, saturated, lightness); */
+
+/* 1. Hue */
+/*     - type of color 0-360° */
+/*     - 0   -> red */
+/*     - 120 -> green */
+/*     - 240 -> blue */
+
+/* 2. Saturation */
+/*     - intensity or purity of the color */
+/*     - 0-100% */
+/*     - 0%   -> desaturated */
+/*     - 100% -> saturated */
+
+/* 3. Lightness */
+/*     - the brightness of the color */
+/*     - 0-100% */
+/*     - 0    -> black */
+/*     - 50%  -> normal */
+/*     - 100% -> white */
+
+/* good for adjusting aspect like saturation and lightness without necessarily changing the hue */

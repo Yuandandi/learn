@@ -1,0 +1,11 @@
+/* class selector */
+
+/* better to use class selector rather than tag selector inside tag */
+/* marked with .classname */
+/* in your html file there's a tag with classname highlight within any tag*/ 
+/* <span class="highlight">TEXT</span> */
+
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}

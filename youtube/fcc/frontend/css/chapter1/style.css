@@ -1,0 +1,64 @@
+/* inline style < element selector < class < id */ 
+
+/* universal selector (select everything) */
+* {
+    font-family: italic;
+    /* border: 3px solid red; */ }
+
+    /* better store your font-size in html selector */
+    html {
+        font-size: 22px;
+    }
+
+/* /1* select body tag *1/ */
+/* body { */
+/*     font-size: 22px; */
+/*     /1* border: 3px solid black; *1/ */
+/* } */
+
+main {
+    font-family: monospace;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+/* group selector */
+/* select h1 and h2 tag */
+h1, h2 {
+    color: blue;
+}
+
+p {
+    color: purple !important;
+}
+
+p {
+    color: red;
+}
+
+/* /1* inherit select the span tag inside the p tag *1/ */
+/* p span{ */
+/*     text-transform: uppercase; */
+/*     background-color: gold; */
+/* } */
+
+/* better to use class selector rather than tag selector inside tag */
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/* class selector */
+/* in html file class="gray" */
+/* because the class gray is more specific than the p tag so It will over rule the color */
+.gray {
+    color: gray;
+}
+
+/* id selector */
+/* typically you don't use id selector, use class or sometimes element selector */
+#second {
+    font-style: italic;
+}

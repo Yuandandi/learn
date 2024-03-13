@@ -1,0 +1,16 @@
+body {
+    font-size: 22px;
+    font-family: arial, helvatica, sans-serif;
+    line-height: 1.5; /* space between line */
+    background-color: papayawhip;
+    /* background: blue; *1/ /1* same as background-color */
+    /* color: darkblue; /1* text color *1/ */
+    /* color: rgb(255,0,0); */
+    /* color: rgba(0,0,0,0.5); /1* alpha channel *1/ */
+    /* color: #000000; */
+    color: #FFFFFF;
+}
+
+p {
+    color: #333;
+}

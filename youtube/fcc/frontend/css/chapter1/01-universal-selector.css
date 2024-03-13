@@ -1,0 +1,5 @@
+/* universal selector (select everything) */
+* {
+    font-family: monospace;
+}
+

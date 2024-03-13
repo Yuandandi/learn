@@ -1,0 +1,8 @@
+/* id selector */
+
+/* typically you don't use id selector, use class or sometimes element selector */
+/* marked with # followed by id value */
+
+#second {
+    font-style: italic;
+}

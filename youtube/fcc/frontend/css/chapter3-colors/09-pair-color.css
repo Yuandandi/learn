@@ -1,0 +1,11 @@
+/* pair color */
+
+/* shorthans your CSS color code */
+/* It has to be pair (repeated) */
+/* #000000 -> #000 */
+/* #FFFFFF -> #FFF */
+/* #FF0000 -> #F00 */
+
+p {
+    color: #000;
+}

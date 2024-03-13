@@ -1,0 +1,7 @@
+/* background-color */
+
+/* background and background-color are the same so It will override the red into papayawhip */
+body {
+    background-color: red;
+    background: papayawhip;
+}

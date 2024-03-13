@@ -1,0 +1,9 @@
+/* give p tag purple color */
+p {
+    color: purple;
+}
+
+/* the value has override to red */
+p {
+    color: red;
+}

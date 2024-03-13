@@ -1,0 +1,26 @@
+/* CSS specificity is a set of rules that determines which styles are applied to an HTML element when multiple conflicting styles are defined. Specificity is crucial in CSS because it helps browsers decide which styles to prioritize when multiple rules target the same element. */
+/* The specificity of a CSS selector is calculated based on four factors, in order of importance: */
+/* Inline Styles: Styles applied directly to an HTML element using the style attribute have the highest specificity. For example: */
+
+<div style="color: red;">...</div>
+
+/* ID Selectors: Selectors targeting elements by their ID have a higher specificity than class selectors. For example: */
+
+#myElement {
+    color: blue;
+}
+
+/* Class Selectors, Attribute Selectors, and Pseudo-Classes: Selectors targeting elements by their class, attribute, or pseudo-class have a medium specificity. For example: */
+
+.myClass {
+    color: green;
+}
+
+/* Element Type Selectors and Pseudo-Elements: Selectors targeting elements by their type (e.g., div, p) or pseudo-elements have the lowest specificity. For example: */
+
+div {
+    color: black;
+}
+
+/* If two or more rules have the same specificity, the one that comes later in the CSS file or is defined last in the HTML (if using inline styles) will take precedence. If there is still a tie, the property defined with the highest specificity wins. */
+/* Understanding specificity is important because it helps developers predict which styles will be applied to elements and debug CSS issues efficiently. It's recommended to use specificity judiciously and avoid relying heavily on high-specificity selectors like IDs, as they can make CSS harder to maintain and override. Instead, prefer using classes and other selectors whenever possible. */ 

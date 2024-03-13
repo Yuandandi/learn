@@ -1,0 +1,15 @@
+/* inherit selector */
+
+/* inherit select the span tag inside the p tag */
+
+p span{
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/* some element is not inherit for examples border */
+* {
+    font-family: monospace;
+    border: 3px solid red;
+}
+

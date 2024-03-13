@@ -1,0 +1,12 @@
+/* alpha channel */
+
+/* the transparency of a color. It allows You t o specivy the opacity level of an element */
+
+/* precentage level */
+/* 0   -> invinsible */
+/* 0.5 -> half visible */
+/* 1   -> fully visible */
+
+body {
+    color: rgb(0,0,0,0.5);
+}

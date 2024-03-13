@@ -1,0 +1,16 @@
+/* hexadecimal */
+
+/* # followed by 6 numbers from 0-9 */
+/* 0 -> lowest  ; black */
+/* F -> highest ; white */
+
+body {
+    color: #000000;
+}
+
+/* #000000 ; black */
+/* #FFFFFF ; white */
+/* #FF0000 ; red */
+/* #00FF00 ; green */
+/* #0000FF ; blue */
+

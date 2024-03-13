@@ -1,0 +1,17 @@
+/* !important keyword or important flag */ 
+/*  will ruin everything make It priorities rather than looking at specificity */
+
+p {
+    color: purple !important;
+}
+
+p {
+    color: red;
+}
+
+/* the color will be purple since It has important */
+
+/* You can use this When */
+/* 1. thrd-paart CSS ; When You use third-party library or plugin that applies styles You need to override */
+/* 2. accesssibility ; to ensure certian styles are always applied */
+/* 3. debugging or temporary fixes */
