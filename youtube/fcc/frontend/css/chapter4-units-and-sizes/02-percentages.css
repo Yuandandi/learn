@@ -1,0 +1,37 @@
+/* percentages */
+
+/* define sizes, distances, and other properties of elements on a we. */ 
+/* unlike px, percentages are relative to some other value (parent's elements size) */
+
+/* will be half the width and 75% of the height of it's parent */
+.child {
+    width: 50%;
+    height: 75%;
+}
+
+
+/* Margins and Paddings: Percentages can also be used to define margins and paddings. When applied to margins, the percentage is calculated relative to the width of the containing block. For example: */
+
+.element {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+/* In this case, the top margin will be 10% of the element's containing block width, and the bottom margin will be 5% of the containing block width. */
+
+/* Positioning: Percentages can be used for positioning elements as well. When applied to properties like top, right, bottom, and left, percentages are calculated relative to the containing block's size. For example: */
+
+.element {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+/* In this case, the .element will be positioned 20% from the top and 25% from the left of its containing block. */
+
+/* Font Size: Percentages can be used to define font sizes. When applied to the font-size property, percentages are calculated relative to the parent element's font size. For example: */
+
+.child {
+    font-size: 80%;
+}
+
+/* In this case, the font size of the .child element will be 80% of the font size of its parent element. */
+/* Percentages provide flexibility and scalability in web design, making it easier to create layouts that adapt to different screen sizes and resolutions. However, they can sometimes be tricky to work with, especially when dealing with complex layouts or nested elements. It's important to understand how percentages are calculated and how they interact with other properties to achieve the desired design. */

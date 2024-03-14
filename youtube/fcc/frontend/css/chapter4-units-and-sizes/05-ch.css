@@ -1,0 +1,10 @@
+/* ch */
+
+/* creating layouts based on character widths (depends of How long 0th of the
+ * text width)*/
+/* if % is rely on the screen the ch is rely on the element itself */
+
+p {
+    width: 40ch;
+}
+

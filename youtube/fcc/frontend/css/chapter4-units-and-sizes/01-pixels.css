@@ -1,0 +1,13 @@
+/* pixels */
+
+/* one pixels means one dot on a screen */ 
+/* relative to the screens resolution and can vary depending on the Devices density (e.g., retina display have fighter pixel than standard one) */
+
+/* 1. absolute sizing */
+/*     - exact number of pixels regardless of the screens resolution or zoom level */
+/*     - default value is 16px */
+
+.element {
+    width: 200px;
+    height: 100px;
+}

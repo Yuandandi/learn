@@ -1,0 +1,23 @@
+/* em */
+
+/* The em unit represents the calculated font size of the current element. */
+/* Here's how the em unit works: */
+/* Relative to Font Size: When you specify a size using em, it's calculated relative to the font size of the current element. For example: */
+
+.parent {
+}
+.child {
+    font-size: 1.5em; /* This will be 1.5 times the font size of the parent element */
+}
+
+/* If the font size of the .parent element is set to 16px, then 1.5em for the .child element will result in a font size of 24px. */
+/* Nested Context: One important aspect of em units is that they are relative to the font size of the nearest parent element with a defined font size. If there is no explicitly defined font size in the parent element, the browser will look further up the DOM tree until it finds a defined font size. */
+/* Scalability: Since em units are relative to the font size, they provide scalability. If you change the font size of a parent element, it will affect the size of child elements that use em units for their font sizes or other properties. */
+/* Use Cases: em units are commonly used for defining font sizes, margins, padding, and other measurements where you want the size to be relative to the font size. They are particularly useful for creating responsive designs that adapt well to different screen sizes and resolutions. */
+/* It's worth noting that sometimes using em units for properties like margins and padding can lead to compounding effects, where each nested element's size is relative to its parent's font size, leading to unpredictable layout results. In such cases, rem units may be preferred, as they are relative to the root element's font size. */
+/* Overall, em units provide flexibility and scalability in CSS layout design, especially when used thoughtfully in conjunction with other relative and absolute units. */
+
+/* usually you'll need It When do padding */
+h1 {
+    padding: 0.5em;
+}

@@ -1,0 +1,21 @@
+/* rem */
+
+/* 'root em' relative to the font size of the root element (usually <html>) */
+/* Root Element: The rem unit is based on the font size of the root element (<html>). By default, the browser's font size for the root element is usually 16 pixels. However, this can be changed by the user or overridden by CSS. */
+/* Font Size Calculation: When you specify a size using rem, it's calculated based on the font size of the root element. For example: */
+
+html {
+    font-size: 16px;
+}
+
+.element {
+    font-size: 1.5rem; /* This will be 1.5 times the root font size */
+}
+
+/* If the root font size is set to 16 pixels, then 1.5rem will be equal to 24 pixels. */
+/* Scalability: One of the main advantages of using rem is its scalability. Since it's based on the root font size, changes to the root font size will affect all elements that use rem, making it easier to create scalable and responsive designs. */
+/* Accessibility: Using rem units can also improve accessibility, as it allows users to adjust the font size in their browser settings while maintaining the relative proportions of the layout. */
+/* Here's a comparison between em and rem: */
+/* em: Relative to the font size of the parent element. If you change the font size of a parent element, it will affect the size of the child element. */
+/* rem: Relative to the font size of the root element. Changes to the root font size will affect all elements using rem, providing more consistent scalability. */
+/* Overall, rem units are useful for creating flexible and scalable layouts in CSS, especially when designing responsive websites that need to adapt to various screen sizes and user preferences. */

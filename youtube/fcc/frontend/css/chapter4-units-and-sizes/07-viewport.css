@@ -1,0 +1,24 @@
+/* vw */
+
+/* viewport width ; the visible portion of the browser window where the webpage is displayed */
+
+.element {
+    width: 50vw;
+}
+
+/* Viewport Width: 1 vw unit is equal to 1% of the width of the viewport. This means that if you set an element's width to 100vw, it will take up 100% of the viewport width, regardless of the size of the browser window. */
+/* Relative Sizing: vw units are relative to the viewport size, making them particularly useful for creating responsive designs that adapt well to different screen sizes and resolutions. For example: */
+
+.element {
+    width: 50vw; /* This will be 50% of the viewport width */
+}
+
+/* If the width of the viewport is 1000px, then 50vw will be 500px. */
+/* Use Cases: vw units are commonly used for defining the width of elements, especially for creating full-width layouts or elements that need to scale proportionally with the viewport size. They're also useful for typography and spacing, where you want the size or spacing to adjust dynamically based on the viewport width. */
+/* Browser Support: vw units are widely supported in modern browsers, but it's essential to consider browser compatibility when using them, especially in older browsers. */
+/* While vw units can be incredibly useful for creating responsive designs, it's important to use them judiciously, as overly large or small values can lead to elements that are too large or too small on certain devices or screen sizes. Testing your designs across various viewport sizes and devices is crucial to ensuring a consistent and user-friendly experience. */
+
+/* not relative to their parent like percentage did */
+
+/* width: 100%; no horizontal slider */
+/* width: 100vw; will make You have a slider for horizontal */
