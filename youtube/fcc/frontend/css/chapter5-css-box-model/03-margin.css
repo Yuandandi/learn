@@ -1,0 +1,12 @@
+/* margin */
+
+/* giving space from 4 side (top, right, bottom, right) */
+
+.element {
+    /* margin-right: 2em; */
+    /* margin-top: 2em; */
+    /* margin-bottom: 2em; */
+    /* margin-left: 2em; */
+    /* all those four equals to ; */
+    margin: 2em;
+}

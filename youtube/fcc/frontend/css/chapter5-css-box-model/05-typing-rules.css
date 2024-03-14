@@ -1,0 +1,17 @@
+/* shorthand typing rules for margin */
+
+.element {
+    margin: 2em;
+    /* 2em      -> top right left bottom */
+
+    margin: 1.5em 2em;
+    /* 1.5em -> top bottom */
+    /* 2em   -> right left */
+
+    margin: 1.5em 2em 3em;
+    /* 1.5em    -> top */
+    /* 2em      -> right left */
+    /* 3em      -> bottom */
+}
+
+/* this applied in any box sizes (padding) */

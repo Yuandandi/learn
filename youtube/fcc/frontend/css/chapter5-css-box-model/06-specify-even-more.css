@@ -1,0 +1,11 @@
+/* with border-top: ; You specify 3 at once but with this You specify only one
+ * option */
+
+/* single element only to be applied */
+/* giving only one applied element */
+
+.sample {
+    border-top-width: 5px;
+    border-top-style: ridge;
+    border-top-color: #FFF;
+}

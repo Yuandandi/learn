@@ -1,0 +1,7 @@
+/* box model area ; content < padding < border < margin */
+
+/* content ; the actual area where the content of the elements is displayed */
+/* padding ; space between the content area and the elements border (height width) */
+/* border ; boundary of the elements (border-width, border-style, border-color) (solidlines, dotted, dashed) */
+/* margin ; space outside the border of an element, separates the elements from other elements on the page */
+

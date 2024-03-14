@@ -1,0 +1,6 @@
+/* the outter line of the borderline */
+
+.sample {
+    outline: 5px solid purple;
+    outline-offset: 5px; /* giving space between border and outline */
+}

@@ -1,0 +1,17 @@
+/* CSS reset */
+
+/* set of ruels designed to reset the styling of html elements to a consistent baselien accrosss different web browser */
+/*     - neutralizing default margins and padding */ 
+/*     - standardizing typography */
+/*     - remove list styles */
+/*     - reset from elements */
+/*     - standardizing box-sizing */
+/*     - if you're Using CSS frmaework all of htem have take care of many cross
+ *     browser incosistencies
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+

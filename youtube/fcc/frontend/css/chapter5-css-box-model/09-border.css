@@ -1,0 +1,6 @@
+/* border */
+
+.sample {
+    border: 5px solid white;
+    border-radius: 50%;  /* make It circle */
+}
