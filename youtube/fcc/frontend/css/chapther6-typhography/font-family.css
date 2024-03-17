@@ -1,0 +1,12 @@
+p {
+    font-family: serif;
+    font-family: sans-serif; /* more popular than serif */
+    font-family: monospace; /* give each chraracters equals space */
+    font-family: cursive;
+}
+
+/* multiple option, if giving the option to look which font to be used if the font is not installed on particular device's */
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}

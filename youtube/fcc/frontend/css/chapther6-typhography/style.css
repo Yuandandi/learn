@@ -1,0 +1,34 @@
+/* * { */
+/*     margin: 0; */
+/*     padding: 0; */
+/*     box-sizing: 0px; */
+/* } */
+
+/* import font from fonts.google.com */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap') */
+
+body {
+    padding: 25%;
+    font-size: 2rem; /* root em from the default 16px becomes 32px*/
+    /* color: purple; */
+    /* font-family: 'Courier New', fantasy, monospace; /1* more popular than serif *1/ */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* input, button { */
+/*     font: inherit; /1* input and button are not inherit by default *1/ */
+/* } */
+
+p {
+    /*     text-decoration: none; */
+    /*     text-align: left; /1* school paper *1/ */
+    /*     text-align: justify; /1* magazine *1/ */
+    /*     text-indent: 5em; /1* indent on the first line *1/ */
+    line-height: 1.5; /* the height of the line default is 1.2 */
+    /*     letter-spacing: .1em; /1* space every letter *1/ */
+    /*     word-spacing: 0.1em; /1* space between word *1/ */
+    /*     font-weight: 100; /1* the boldness of a text *1/ */
+    /*     font-style: oblique; */
+}
