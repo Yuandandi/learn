@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* main { */
+/*     background-color: aqua; */
+/*     width: 50%; */
+/* } */
+
+/* p { */
+/*     background-color: lightgrey; /1* You can see block level element *1/ */
+/*     margin: 10px 50px; */
+/* } */
+
+ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    /* display: none; /1* now the element entirely gone sometimes we need this *1/ */
+    text-align: right; /* all the text align to the right */
+    background-color: #000;
+    margin: 0; /* pulled to the top of the page */
+}
+
+li {
+    display: inline-block; /* make the list in one line */
+    /* display: none; /1* all the list will be gone *1/ */
+    margin-inline: 0.5rem; /* margin between text */
+}
+
+li a {
+    color:  #fff;
+    text-decoration: none;
+}
+
+li a:hover, li a:focus {
+    text-decoration: underline;
+}

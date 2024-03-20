@@ -1,0 +1,4 @@
+p {
+    cursor: pointer;  /* default */
+    cursor: not-allowed;
+}

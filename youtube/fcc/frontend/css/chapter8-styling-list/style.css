@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto&display=swap');
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: roboto, sans-serif;
+}
+
+ol {
+    list-style-type: decimal; /* default */
+    list-style-type: lower-alpha; /* alphabet lowercase */
+    list-style-type: decimal-leading-zero; /* 01. 02. */
+    list-style-type: disc; /* bullet  point like unordered list */
+    list-style-type: circle; /* bullet white */
+    list-style-type: upper-roman; /* romawi */
+    list-style-type: none; /* no style but still indented, padding > 0*/
+    padding: 0; /* change from none to not indented kinda like */
+}
+
+ul li {
+    list-style-type: square;
+    text-align: center; /* some browser will leave the list point so You need the element bellow */
+    list-style-position: inside; /* default is outside */
+    color: blue;
+    line-height: 1.6;
+    /* list-style-type: url("./check.png") ; */
+    list-style: square url("./icons8-tick.gif"); /* shorter version can give multiple option*/
+}
+
+ul li:nth-child(2) { /* only 2nd list applied (NUM, odd, even)*/
+    color: red;
+}
+
+ul li::marker {
+    color: black;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Only $5 >>";
+    list-style-position: inside;
+}

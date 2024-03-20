@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+
+.columns {
+    /* column-count: 4; */
+    /* column-width: 250px; /1* every column can't be more than 250 other than that will wrap to down of the page even thogh You set the column count to 4 (responsive)   *1/ */
+    
+    /* same as above faster wat */
+    columns: 4 250px;
+    column-rule: 3px solid #333; /* line between columns (responsive) */
+    column-gap: 3rem; /* extra spacing between the columns */
+}
+
+.columns p {
+    margin-top: 0; /* remove margin collapse between paragraph */
+}
+
+.columns h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    break-inside: avoid; /* incase the Next Topic weirdly separated */
+    break-before: column; /* force Next Topic to the top of the page. not the best because It can shrink your page into one column if the page too small*/
+    margin-top: 0;
+}
+
+.columns .quote {
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
+    margin-top: 2rem;
+}
+
+.nowrap {
+    white-space: nowrap; /* not break the dude and the hypen before */
+}
+

@@ -1,0 +1,15 @@
+/* state of anchor element */
+/* sudo class has more specificity than regular element */
+/* You need to order this way visited, hover, active. if You rearrange It will not work the last two */
+
+a:visited { /* has visited the links */
+    color: purple;
+}
+
+a:hover { /* cursor is above the links */
+    color: dodgerblue;
+}
+
+a:active { /* hold the links */
+    color: green;
+}

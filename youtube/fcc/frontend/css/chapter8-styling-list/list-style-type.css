@@ -1,0 +1,13 @@
+list-style type
+
+What type of list style You want
+
+ol {
+    list-style-type: decimal;
+    list-style-type: lower-alpha;
+    list-style-type: decimal-leading-zero;
+    list-style-type: disc; /* bullet  point like unordered list */
+    list-style-type: circle; /* bullet white */
+    list-style-type: upper-roman; /* romawi */
+    list-style-type: square; 
+}
