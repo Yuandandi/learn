@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh; /* make It per section height */
+}
+
+html {
+    scroll-behavior: smooth; /* smut scrolling */
+}
+
+.blue {
+    background-color: #00f;
+}
+
+.red {
+    background-color: #f00;
+}
+
+.green {
+    background-color: green;
+}
+
+header, footer {
+    color: #fff;
+    text-align: center;
+    height: 100px;
+}
+
+header {
+    /* combine this to make header animate change each page */
+    /* each page section has it's own header */
+    font-size: 4rem;
+    position: sticky; 
+    top: 0;
+}
+
+footer {
+    background-color: #000;
+    position: sticky; /* each header transition */
+    font-size: 3rem;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+a:visited {
+    color: #fff;
+}
+
+
+.social {
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%; /* stays in place kinda like (social button)*/
+    left: 0;
+    z-index: 1; /* make It on the first layer (always on the top), if It change to 0 It will be bellow the header */
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    border: 1px solid #000;
+    max-width: 800px;
+    min-height: 400px;
+    /* margin-inline: auto; */
+    gap: 1rem;
+
+    display: flex; /* set this only doesn't give any change, applide line bellow to see the option */
+    /* justify-content: flex-start; /1* default into the left side*/ */
+    /* justify-content: flex-end; /1* into the right side *1/ */
+    /* justify-content: center; */
+    /* justify-content: space-around; /1* giving more space between the gaps *1/ */
+
+    /* justify-content: space-between; /1* no space in the right and left side *1/ */
+    justify-content: space-evenly; /* more space between gaps and a little smaller gaps in left right side */
+
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+
+    /* flex-direction: row;  /1* vertical *1/ */
+    /* flex-direction: row-reverse; /1* now the number is reversed (reverse the ordure of the element) It will applied rowreversed first then the order element if You applied *1/ */ 
+
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* if the width is smaller It will be two columns (fixed overflow, element shrinking) */
+
+    align-items: space-between;
+
+    /* shortcut for flex-direction and flex-wrap */
+    flex-flow: row-reverse wrap;
+
+}
+
+.box {
+    /* min-width: 100px; */
+    /* min-height: 100px; */
+    height: 100px;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    min-height: 100px;
+    background-color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* flex-basis: 100px; /1* another way to replace min-width and  *1/ */
+    /* flex-grow: 1; /1* fill the gap: right and left; *1/ */
+
+    /* flex-shrink: 1; */
+    /* flex-basis: 100px; */
+
+    /* flex: 1 1 40%; */
+
+
+    /* flex shorthand (grow shrink basis) */
+    flex: 1 1 250px;
+
+}
+
+.box:nth-child(2) {
+    /* flex-grow: 2; /1* make number two wider than number one *1/ */
+    /* flex-shrink: 2; */
+
+    /* flex: 2 2 40%; */ /* with percent number two will get little wider than number one */
+    flex: 1 1 250px; /* if You use px instead number 2 will get smaller if the device width smaller */
+    order: 1; /* will change the eorder 0 is stays in the place 1 is in number 3, -1 is in the number one */
+}

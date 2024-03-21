@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container {
+    position: relative; /* now It has ancestor that have position relative */
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+}
+
+.inner-container {
+    /* if You comment 1 line bellow It will relative to the outer-container and top left of the absolute class will be applied */
+    /* position: relative; /1* move to here because It will took into the box closest to It *1/ */
+    border: 2px solid #333;
+    width: 40vw;
+    height: 50vh;
+    margin: 20px auto;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.absolute {
+    background-color: #00f;
+    /* absolute positioning means relative parent, and if It doesn't have ancestor element that is position relative than It takes the initial boundary of the initial box which windows sized */
+
+    position: absolute; /* another opt static. It will not move the blue box and didn't follow the 2 element bellow */
+    /* top: 0; */
+    /* left: 0; */
+
+    /* /1* now the box relative to the inner container *1/ */
+    /* top: 100px; */
+    /* left: 50px; */
+
+}
+
+.relative {
+    background-color: #f00;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}

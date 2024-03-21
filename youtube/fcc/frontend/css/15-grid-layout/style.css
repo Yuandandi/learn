@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 400px; /* now You can see each height is 200 */
+    display: grid; /* vertical */
+    grid-auto-flow: row; /* default */
+    /* grid-auto-flow: column; */
+
+    /* shortcut */
+    /* grid-template-columns; 2fr 1fr 1fr; */
+    /* grid-template-columns: 200px 100px 200px; */
+    /* grid-template-columns: 2fr 1fr 1fr; /1* fraction perbandingan / ratio *1/ */
+    /* grid-template-columns: 200px 1fr 1fr; /1* can combined with px too *1/ */
+    /* grid-template-columns: repeat(4,1fr); /1* 4 columns with ratio 1:1, grid can have an empty space *1/ */
+    grid-template-columns: repeat(2, 1fr 2fr); /* 2 columns repeat 1 fraction 2fraction until last */
+
+    grid-auto-rows: 200px; /* rows height 200px */
+    grid-auto-rows: minmax(150px, auto); /* CSS function, each columns can be more than 150px. if each the total height is higher than 150 multiplication, the rest will grow for each e.g. 400px so It will set to 200 each*/
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
