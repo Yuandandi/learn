@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Begin reset */
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block; /* block element take up the full width. applied this to remove inline effeect after You remove p tag*/
+}
+/* End Reset */
+
+/* Utility Classes */
+.nowrap {
+    white-space: nowrap; /* I'm Jane don wrap */
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+/* End Utility Classes */
+
+
+body {
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color: aliceblue;
+    background-position: right center;
+    background-size: 20%, auto; /* zoom out the bubbles */
+}
+
+.container {
+    background-color: rgb(251, 210, 156);
+    background-image: url('images/map-2176x1451.png'); /* in the smaller device if You use small pixel of image It will get blurry in the device that has more pixels. use image as twice as big What You plane on displaying */
+    background-repeat: repeat; /* just like this */
+    background-size: cover; /* zoom in, very nice one to use */
+    background-color: hsla(0, 0%, 100%, 0.35); /* makes text more popsup by increasing background hue */
+    background-position: center; /* (center top left right). center (means center center)*/
+}
+
+.hero {
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    display: flex; /* the side of picture */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-size: contain; /* repeat to the right */
+    background-image: url('map-2176x1451.png');
+}
+
+.h1 {
+    font-size: 800%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000; /* standout text with popsups (x axis, y axis, blurr effect px with color black) */
+}
+
+.profile-pic-figure {
+    /* border: 3px solid red; */
+    width: 35%; /* override the html into 35% of the page */
+}
+
+.profile-pic-figure img {
+    /* responsive, and avoid content layout shift */
+    width: 100%;
+    height: auto;
+
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}

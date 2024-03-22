@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto&display=swap'); 
+
+/* Reset start */
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset end */
+
+
+/* General Styles */
+body {
+    font: 1.5rem "Nunito", sans-serif; /* shorthand (font-size font-style) doesn't inclued "," */
+    min-height: 100vh;
+}
+

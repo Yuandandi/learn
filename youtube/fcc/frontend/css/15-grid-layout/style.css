@@ -9,6 +9,35 @@
 body {
     font-family: "Roboto", sans-serif;
     min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 50px auto 50px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn sb sb"
+    "ft ft ft ft ft ft ft ft ft";
+    gap: .5rem;
+}
+
+.el {
+    background-color: rebeccapurple;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    grid-area: hd;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.sidebar {
+    grid-area: sb;
+}
+
+.footer {
+    grid-area: ft;
 }
 
 .container {
@@ -27,6 +56,15 @@ body {
 
     grid-auto-rows: 200px; /* rows height 200px */
     grid-auto-rows: minmax(150px, auto); /* CSS function, each columns can be more than 150px. if each the total height is higher than 150 multiplication, the rest will grow for each e.g. 400px so It will set to 200 each*/
+
+    /* gutter */
+    /* row-gap: 1em; /1* gap each row *1/ */
+    /* column-gap: 1em; /1* gap each column *1/ */
+    /* gap: 1em; /1* row and column gap combined *1/ */
+    /* gap: 1em 2em; /1* row, column *1/ */
+    gap: 1rem;
+
+    grid-area: mn;
 }
 
 .box {
@@ -36,3 +74,30 @@ body {
     padding: 0.5rem;
 }
 
+.box:first-child {
+    background-color: #00f;
+
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+    /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
+
+    /* shorthand (start / end) */
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+
+    display: grid;
+    /* align-content: center; */
+    /* justify-content: center; */
+
+    /* shorthand (align-content justify-content) */
+    place-content: end center;
+    /* both are center */
+    place-content: center;
+}
+
+.box:nth-child(2) {
+    background-color: purple;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4; /* It makes the number 3 and 4 go to the top since the number 2  start with row 3 and ands in 4; */
+}
