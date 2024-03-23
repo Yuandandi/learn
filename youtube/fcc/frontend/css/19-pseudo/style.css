@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* UTILITY CLASSES */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* GENERAL STYLES */
+html {
+    scroll-behaviour: smooth;
+}
+
+body {
+    font: 1.5rem "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+    display: flex;
+    flex-direction: column;
+}
+
+/* header, footer { */
+:is(header, footer) { /* same as above, but is have specificity effect if added class */
+    /* :is(header, footer, .card) {/1* adding card make this selector higher both header and footer *1/ */
+    /* :where(header, footer, .card) { /1* where doesn't change selector number, you can put whatever you want *1/ */
+    position: sticky;
+    background-color: #1e293b; /* override the header footer radial gradient */
+    color: whitesmoke;
+    text-align: center;
+    z-index: 1; /* prevent figcaption ovelaping */
+}
+
+header {
+    top: 0; /* prevent gap top of the screen */
+}
+
+nav {
+    background-color: #fff;
+    padding: .5rem;
+    border-bottom: 2px solid #000;
+    font-weight: bolder;
+    display: flex; /* make It to the left without a gap:; */
+    justify-content: space-evenly; /* giving gap all the same size (in the middle like) */
+}
+
+/* nav a:link, nav a:visited { /1* a:link unvisited link *1/ */
+nav a:any-link { /* pseudo selector */
+    color: #000;
+}
+
+/* nav a:hover, nav a:focus { */
+nav :is(a:hover, a:focus) { /* pseudo selector, same as above DRY code (don't repeat yurself) */
+    color: hsla(0, 0%, 20%, .6); /* gray kinda like */
+}
+
+nav a:active { /* hold and press links */
+    color: red;
+}
+
+main {
+    flex-grow: 1; /* right left bottom up without a gap */
+    display: flex; /* flexible to the right */
+    flex-direction: column; 
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+footer {
+    bottom: 0; /* bottom 0 too like header */
+}
+
+/* PROFILE CARD */
+.card {
+    scroll-margin-top: 8rem;
+    width: min(100%, 350px);
+    background-color: #cbd5e1;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 1rem; /* the picture smaller and not overlapping border radius */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* target pseudo class */
+.card:target { /* the last profile You clicked */
+    border: 2px solid rebeccapurple;
+}
+
+.card figure {
+    display: flex; /* text to the side of image */
+    flex-flow: column nowrap; /* make It bellow image and nowrap text */
+}
+
+.card img {
+    /* circle profile picture */
+    border: 5px double #333;
+    border-radius: 50%;
+}
+
+/* :not pseudo classes */
+/* .card img[alt]{ /1* img tag inside card class, who have alt attribute*/ */
+.card img:not([alt]) {  /*  img tag inside card class, who are not have alt attribute */
+    border: 10px solid red;
+}
+
+.card:nth-child(even) { /* matt designer got the red border because It will applied to the original order (we have order -1 before) */
+    /* can contain odd even */
+    background-color: papayawhip;
+}
+
+/* pseudo element content (after, before)*/
+.card figcaption:before {
+    content: '✨'; /* fill the each one of each caption (default is right after or right before the text)) */
+    display: block; /* make It on top of the name */
+}
+
+/* (first-letter, first-line) this will applied to the sparkle emoji change the figcaption:before to after and see It will change the letter you want */
+.card figcaption::first-letter { 
+    font-size: 3rem;
+}
+
+.card p {
+    position: relative;
+}
+
+/* adding single quote each the paragraph inside the q tag for " (double quote) */
+/* You can style the quotes separately than the rest paragraph */
+.card p:before {
+    content: open-quote;
+    font-size: 3em;
+    position: absolute;
+    top: -0.25em;
+    left: -0.5em;
+}
+
+.card p:after {
+    content: close-quote;
+    font-size: 3em;
+    position: absolute;
+    top: -0.25em;
+    right: -0.5em;
+}
+
+.card figcaption {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+/* SMALL */
+@media screen and (min-width: 576px) {
+    main {
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+    
+    .card {
+        width: min(100%, 400px);
+    }
+    .card:last-child {
+        order: -1; /* the last will be the first and so on */
+    }
+}
+
+/* MEDIUM */
+@media screen and (min-width: 768px) {
+    nav {
+        display: none; /* You don't need button since it'll display all the staff */
+    }
+    .card {
+        width: min(100%, 325px);
+    }
+    .card figure {
+        flex-flow: column-reverse;
+    }
+    .card p{
+        margin-top: 1rem;
+    }
+}
+
+/* LARGE */
+@media screen and (min-width: 1200px) {
+    .card {
+        width: min(100%, 400px);
+    }
+    .card:nth-child(2) {
+        order -1
+    }
+}
+
+/* XL */ 
+@media screen and (min-width: 1200px) {
+    .card {
+        width: min(33% -1rem, 5px);
+    }
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (min-width: 425px) and (min-aspect-ratio: 7/4) { /* aspect ratio (width/height) specific for smaller devices*/
+    h1 {
+        font-size: 1.5rem;
+    }
+    nav {
+        display: none;
+    }
+    main {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    .card {
+        width: min(calc(33% - .25rem), 200px);
+    }
+    .card figcaption, .card p {
+        font-size: 1.25rem;
+    }
+}

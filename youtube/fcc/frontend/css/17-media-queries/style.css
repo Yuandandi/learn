@@ -13,5 +13,103 @@
 body {
     font: 1.5rem "Nunito", sans-serif; /* shorthand (font-size font-style) doesn't inclued "," */
     min-height: 100vh;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569); /* default center */
+    display: flex;
+    flex-direction: column;
+}
+
+/* media queries syntax */
+/* @media screen and (min-aspect-ratio: 7/4) { */
+/*     /1* CSS rules *1/ */
+/* } */
+
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%; /* main center vertically but not horizontally */
+    text-align: center; /* fixed 100% width for each element */
+}
+
+header, footer {
+    position: sticky;
+    background-color: #1E2938;
+    color: whitesmoke;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: #fff;
+    color: #000;
+    padding: .5rem;
+    border-bottom: 2px solid #000;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    bottom: 0;
+}
+
+/* SMALL */
+@media screen and (min-width: 576px) { /* valid if the media is not more than 576px */
+    body {
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+    nav {
+        display: none; /* now the background for the body is main */
+    }
+}
+
+/* MEDIUM */
+@media screen and (min-width: 768px) { /* valid if the media is not more than 576px */
+    body {
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+    }
+    nav {
+        display: none; /* now the background for the body is main */
+    }
+}
+
+/* LARGE */
+@media screen and (min-width: 992px) { /* valid if the media is not more than 576px */
+    body {
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+    }
+    nav {
+        display: none; /* now the background for the body is main */
+    }
+}
+
+/* XL */
+@media screen and (min-width: 1200px) { /* valid if the media is not more than 576px */
+    body {
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 992px) { /* valid if the media is not more than 576px */
+    body {
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: none; /* now the background for the body is main */
+    }
 }
 
