@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --HEADER-BGCOLOR: #333;
+    --HEADER-COLOR: whitesmoke;
+}
+
+html {
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header {
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--HEADER-COLOR);
+}
+
+.header-title-line {
+    padding: .25rem .5rem; /* top bottom, left ritgth */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; /* button to the top right; */
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none; /* Its seemed gone */
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-icon, .menu-icon::before, .menu-icon::after { /* here we have three lines but stack each other so It seemed like one linear */
+    background-color: var(--HEADER-COLOR);
+    width: 40px;
+    height: 5px;
+    position: absolute; /* to be able move relative is stick on the place */
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: ""; /* blank content to make It still visible */
+}
+
+.menu-icon::before {
+    transform: translate(-20px, -12px);
+}
+
+.menu-icon::after {
+    transform: translate(-20px, 12px);
+}
+
+/* pseudo selector to call the show menu keyframes function */
+:is(header:hover, header:focus-within) .menu-icon {
+    background-color: transparent;
+    transform: rotate(720deg);
+}
+
+:is(header:hover, header:focus-within) .menu-icon::before {
+    transform: translateX(-20px) rotate(45deg);
+}
+
+:is(header:hover, header:focus-within) .menu-icon::after {
+    transform: translateX(-20px) rotate(-45deg);
+}
+
+:is(header:hover, header:focus-within) nav {
+    display: block;
+}
+
+nav {
+    background-color: var(--HEADER-BGCOLOR);
+    display: none;
+    transform-origin: top center;
+    animation: showMenu .5s ease-in-out forwards;
+}
+
+/* DEFINE ANIMATION */
+@keyframes showMenu {
+    0% {
+        transform: scaleY(0);
+    }
+    80% {
+        transform: scaleY(1.2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+nav ul {
+    list-style-type: none; /* no style list - is removed */
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+nav li {
+    padding: .5rem;
+    border-top: 1px solid var(--HEADER-COLOR);
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    width: 80%; /* animation will make It grow so I didn't set to 100% */
+    margin: auto;
+}
+
+nav a:any-link { /* both visited and unvisited links */
+    color: var(--HEADER-COLOR);
+    font-weight: bold;
+    text-decoration: none; /* no underline */
+}
+
+nav a:hover, nav a:focus { /* focus means You Using <tab> keys to see the animation */
+    transform: scale(1.2);
+    transition: all .3s; /* if all You can type .3s directly, .3s so It won't take so long */
+}

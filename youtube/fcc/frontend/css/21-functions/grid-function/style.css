@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); 
+
+/* Reset start */
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset end */
+
+
+/* root pseudo classes, all element are inherit by this selector, even the html tag */
+:root {
+    /* FONT */
+    --FF: "Nunito", sans-serif;
+    --FS: clamp(1.75rem, 3vh, 2.25rem);
+    --FS-SM: clamp(1.25rem, 2vh, 1.5rem);
+    --FS-XL: 3rem;
+
+    /* COLOR */
+    --BGCOLOR: #475569;
+    --ALT-BGCOLOR: #1E2938;
+    --RADIAL-COLOR: whitesmoke;
+    --LIGHT-COLOR: whitesmoke; /* it's okay if 2 variables have the same value */
+    --DARK-COLOR: #000; 
+
+    /* SQUARE */
+    --SQUARE-BGCOLOR: papayawhip;
+    --SQUARE-SIZE: max(150px, 20vw); /* take the larger of both these values */
+
+    /* GENERAL */
+    --PADDING: .5em;
+    --SHADOWS: 0 6px 5px -5px var(--DARK-COLOR); /* variable inside the variable */
+    --BORDERS: 2px solid var(--DARK-COLOR);
+}
+
+/* GENERAL STYLES */
+body {
+    font: var(--FS) var(--FF);
+    min-height: 100vh;
+    background-color: var(--BGCOLOR); /* call the variable */
+    background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR)); /* default center */
+    display: flex;
+    flex-direction: column;
+}
+
+header, nav, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%; /* main center vertically but not horizontally */
+    text-align: center; /* fixed 100% width for each element */
+}
+
+header, footer {
+    position: sticky;
+    background-color: var(--ALT-BGCOLOR);
+    color: var(--LIGHT-COLOR);
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: var(--LIGHT-COLOR) ;
+    color: var(--DARK-COLOR);
+    border-bottom: var(--BORDERS);
+    box-shadow: var(--SHADOWS); /* x-offset y-offset blurr spread */
+}
+
+main {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 300px)); /* rows, minmax function */
+    padding: var(--PADDING);
+    gap: min(2vw, 20px);
+}
+
+main aside {
+    background-color: hsla(0, 0%, 20%, 0.8);
+    color: var(--LIGHT-COLOR);
+    font-size: var(--FS-SM);
+    font-style: italic;
+    padding: var(--PADDING);
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.tooltip {
+    border-bottom: 1px dashed orange;
+    position: relative;
+}
+
+.tooltip:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -20px;
+    white-space: nowrap;
+    background-color: var(--DARK-COLOR);
+    padding: var(--PADDING);
+    border-radius: 15px;
+}
+
+footer {
+    bottom: 0;
+    gap: min(4vw, 15px) /* row gap and column gap */
+}
+
+/* FEATURES */
+
+/* REDIFINE A VARIABLE */
+.square--highlight {
+    --SQUARE-BGCOLOR: cornflowerblue;
+}
+
+.square {
+    background-color: var(--SQUARE-BGCOLOR);
+    /* width: var(--SQUARE-SIZE); */
+    /* height: var(--SQUARE-SIZE); */
+    display: grid;
+    place-content: center;
+    border: var(--BORDERS);
+    border-radius: 15px;
+    font-size: var(--FS-XL);
+    box-shadow: var(--SHADOWS);
+}
+
+
+/* DARKMODE VIA MEDIA QUERIES */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --BGCOLOR: #000 /* black */
+        --ALT-BGCOLOR: #333; /* flat black */
+        --RADIAL-COLOR: rgb(217, 217, 217);
+        --SQUARE-BGCOLOR: rgb(202, 174, 202);
+    }
+}
+
