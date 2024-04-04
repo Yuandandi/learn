@@ -26,14 +26,15 @@ var contacts = [
   }
 ];
 
+// user input name and which properties
 function lookProfile(name, prop) {
   for (var i = 0; i < contacts.length; i++) {
-    if(contacts[i].firstName === name)
-      return contacts[i][prop] || "No such property";
+    if(contacts[i].firstName === name) // if the name exist in the firstName key value pair go to next (strict equality)
+      return contacts[i][prop] || "No such property"; // if the properties exist return the properties if not "no such properties"
   }
-  return "No such contacts";
+  return "No such contacts"; // if name is incorrect return this
 }
 
-var data = lookProfile("akira", "likes");
+var data = lookProfile("foo", "likes");
 
 console.log(data);

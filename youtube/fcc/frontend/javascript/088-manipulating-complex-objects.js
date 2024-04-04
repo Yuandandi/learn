@@ -1,4 +1,4 @@
-// JavaScript object is a way to store vlexible data (stirngs, numbers, arrays)
+// JavaScript object is a way to store flexible data (strings, numbers, arrays)
 
 var myMusic = [
   {
