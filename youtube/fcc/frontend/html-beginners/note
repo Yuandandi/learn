@@ -1,0 +1,6 @@
+# When we use an id
+- one id per element [must be unique]
+- multiple id attributes cannot be the same value [it's invalid html to have duplicate ids]
+
+# whent to use class
+- the prefered way of identifying elements

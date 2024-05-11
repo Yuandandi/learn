@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" /> 
+  </head>
+  <body>
+    <section class="menu"></section>
+    <!-- title -->
+    <div class="title">
+      <h2>our menu</h2>
+      <div class="underline"></div>
+    </div>
+    <!-- filter buttons -->
+    <div class="btn-container">
+      <!-- data-* attributes is uded to store custom
+        data private to the page or application, givees us the ability to embed the custom data attributes on all html
+        elements.-->
+        <button class="filter-btn" type="button" data-id="all">all</button> 
+        <button class="filter-btn" type="button" data-id="breakfast">breakfast</button> <!-- the value of id should be te same as inside text"-->
+        <button class="filter-btn" type="button" data-id="lunch">lunch</button>
+        <button class="filter-btn" type="button" data-id="shakes">shakes</button>
+    </div>
+    <!-- menu items -->
+    <div class="section-center">
+      <!-- single item -->
+      <article class="menu-item">
+        <img src="./menu-item.jpeg" alt="menu item" class="photo">
+        <div class="item-info">
+          <header>
+            <h4>buttermilk pancakes</h4>
+            <h4 class="price">$15</h4>
+          </header>
+          <p class="item-text">
+          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+          </p>
+        </div>
+      </article>
+      <!-- end of single item -->
+    </div>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
