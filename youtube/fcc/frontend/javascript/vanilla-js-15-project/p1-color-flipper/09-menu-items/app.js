@@ -84,7 +84,8 @@ const menu = [
 ];
 
 const sectionCenter = document.querySelector('.section-center');
-const filterBtns = document.querySelectorAll('.filter-btn')
+const sectionCenter = document.querySelector(".section-center");
+const btnContainer = document.querySelector(".btn-container");
 
 // window.addEventListener('DOMContentLoaded', function() { // DOMContentLoaded, When index.html fully loaded
 //   // console.log("shake and bake"); // simple check if It works
@@ -114,35 +115,14 @@ const filterBtns = document.querySelectorAll('.filter-btn')
 // debug the code and place It inside the Function so You can call anytime You want;
 
 // load items
+
 window.addEventListener('DOMContentLoaded', function() { 
   displayMenuItems(menu); // by commenting this You will hide the rest items
-});
-
-// filter items
-filterBtns.forEach(function(btn) {
-  btn.addEventListener('click', function(e) {
-    // will return domstringmap with id given in data-*="" ;
-    // add the .id to return only the id string;
-    // console.log(e.currentTarget.dataset.id); // dataset ; property read-only property of the htmlelement interface provides read/write access to custom data attribute (data) on elements
-    const category = e.currentTarget.dataset.id;
-    // filter method;
-    const menuCategory = menu.filter(function(menuItem) { // filter ; method creates a new array filled with elements that pass a tets provided by a Function, doesn't change the original array, doesn't execute the Function for empty elements
-      // console.log(menuItem.category); // will return al menuItem category
-      if (menuItem.category  === category) {
-        return menuItem;
-      };
-    });
-    // console.log(menuCategory)
-    if (category === 'all') {
-      displayMenuItems(menu);
-    } else {
-      displayMenuItems(menuCategory)
-    }
-  });
+  displayMenuButtons();
 });
 
 function displayMenuItems(menuItems) {
-  let displayMenu = menu.map(function (item) { 
+  let displayMenu = menuItems.map(function (item) {
     return `<article class="menu-item">
       <img src=${item.img} alt=${item.title} class="photo">
       <div class="item-info">
@@ -158,3 +138,42 @@ function displayMenuItems(menuItems) {
   // console.log(displayMenu);  // will displa all the element inside article tag into a full string
   sectionCenter.innerHTML = displayMenu; 
 };
+
+function displayMenuButtons() {
+  const categories = menu.reduce(
+    function (values, item) {
+      if (!values.includes(item.category)) {
+        values.push(item.category);
+      }
+      return values;
+    },
+    ["all"]
+  );
+  const categoryBtns = categories.map(function (category) {
+    return `<button type="button" class="filter-btn" date-id=${category}</button>`;
+  })
+    .join("");
+  btnContainer.innerHTML = categoryBtns;
+  const filterBtns = btnContainer.querySelectorAll(".filter-btn");
+  console.log(filterBtns);
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      // will return domstringmap with id given in data-*="" ;
+      // add the .id to return only the id string;
+      // console.log(e.currentTarget.dataset.id); // dataset ; property read-only property of the htmlelement interface provides read/write access to custom data attribute (data) on elements
+      const category = e.currentTarget.dataset.id;
+      const menuCategory = menu.filter(function (menuItem) { // filter ; method creates a new array filled with elements that pass a tets provided by a Function, doesn't change the original array, doesn't execute the Function for empty elements
+        // console.log(menuItem.category); // will return al menuItem category
+        if (menuItem.category === category) {
+          return menuItem;
+        }
+      });
+      // console.log(menuCategory)
+      if (category === "all") {
+        displayMenuItems(menu);
+      } else {
+        displayMenuItems(menuCategory);
+      }
+    });
+  });
+}
