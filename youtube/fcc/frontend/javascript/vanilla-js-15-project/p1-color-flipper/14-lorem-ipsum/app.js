@@ -40,5 +40,4 @@ form.addEventListener('submit', function(e) {
       return `<p class="result">${item}</p>`; // wrap the array into a string inside p tag
     }).join("");
     result.innerHTML = tempText;
-  }
-});
+  } });
