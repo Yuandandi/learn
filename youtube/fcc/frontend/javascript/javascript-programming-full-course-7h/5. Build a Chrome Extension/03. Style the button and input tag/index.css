@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*/1* */
+
+/*Style our app according to the provided design! */
+
+/*green color -> #5f9341 */
+
+/**/ */
+
+
+input {
+    width: 100%; /* the default without box-sizing: border-box is 100% + 10px + 10px so the input field is wider than the input body, that's why we add them */
+    /* padding-left: 10px; /1* the default text input has no gap: or touching the input block *1/ */
+    /* padding-right: 10px; */
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    padding: 10px; /* shortcut for comment above */
+    box-sizing: border-box;
+    border: 1px solid #5f9341;
+    margin-bottom: 4px;
+}
+
+button {
+    background: #5f9341;
+    color: #fff;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    /* padding-left: 20px; */
+    /* padding-ringt: 20px; */
+    padding: 10px 20px; /* shortcut for comment above (y axis, x axis)*/
+    border: none;
+    font-weight: bold;
+}

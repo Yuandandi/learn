@@ -1,0 +1,18 @@
+/* Complete the CSS styling according to the provided design */
+
+body {
+    font-family: "Trabuchet MS", "Lucida Sans Unicode", "Lucida Granade", "Lucida sans", "Arial", "sans-serif";
+    background-image: url('images/table.png');
+    background-size: cover; /* default is repeat the image to fill the width, change to this to zooming into no repetitive */
+    text-align: center; /* text in the center of the page */
+    color: #fff; /* white color in hex code */
+    font-weight: bold;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+#message-el {
+    font-style: italic;
+}
