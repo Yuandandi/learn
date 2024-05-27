@@ -1,0 +1,15 @@
+/* div b { /1* descendant selector b tag inside p tag no matter How far It is inside the tag *1/ */
+/*     color: blue; */
+/* } */
+
+/* div > b { /1* only affect the child element *1/ */
+/*     color: blue; */
+/* } */
+
+/* div + p { /1* selects the first p element that is placed immediately after div element *1/ */
+/*     color: blue; */
+/* } */
+
+div ~ p { /* selects every p element that is preceded by a div element */
+    color: blue;
+}

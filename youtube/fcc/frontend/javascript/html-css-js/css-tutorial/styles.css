@@ -1,0 +1,29 @@
+body {
+    background-color: mediumslateblue;
+    opacity: .9;
+    /* background-image: url('https://c8.alamy.com/comp/2RCTA06/fcc-logo-fcc-letter-fcc-letter-logo-design-initials-fcc-logo-linked-with-circle-and-uppercase-monogram-logo-fcc-typography-for-technology-busines-2RCTA06.jpg'); */
+    /* background-position: right top; */
+}
+
+/* /1* id selector using "#" *1/ */
+/* #welcome { */
+/*     color: red; */
+/* }; */
+
+/* .lorem { */
+/*     color: blue; */
+/* }; */
+
+/* /1* universal selector will override anything; *1/ */
+/* * { */
+/*     color: purple; */
+/* }; */
+
+p {
+    color: #fff;
+    margin-left: 50px;
+    margin-left: 50%;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+};

@@ -1,0 +1,32 @@
+h1 {
+    border-style: solid;
+    border-style: groove;
+    border-style: dashed;
+    border-style: double;
+    border-style: ridge;
+    border-style: dotted;
+    border-style: outset;
+    border-style: inset;
+    border-style: none;
+    border-style: hidden;
+    border-style: dashed double dotted solid;
+}
+
+h2 {
+    border-style: outset;
+    border-width: 1px;
+    border-width: thick;
+    border-width: 10px 5px;
+    border-color: purple;
+    border-color: purple blue green red;
+};
+
+.baz {
+    /* border-top: dashed; */
+    /* border-right-style: dotted; */
+    /* border-left-style: dashed; */
+    /* border-bottom-style: dashed; */
+    /* border-style: dashed dotted; */
+    outline-style: solid;
+    outline-offset: 10px;
+};

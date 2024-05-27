@@ -1,0 +1,18 @@
+table, th, td {
+    /* display: none; /1* remove the element and take no space *1/ */
+    border: 2px solid; /* double border */
+    visibility: hidden; /* only hide the element and take the space */
+    /* width: 100%; */
+    width: 50%;
+    border-collapse: collapse; /* single border good looking */
+    height: 50px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: blue;
+}

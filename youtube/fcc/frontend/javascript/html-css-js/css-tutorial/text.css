@@ -1,0 +1,33 @@
+h3 {
+    color: blue;
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+    text-align: initial;
+    text-align: inherit;
+}
+
+p.baz {
+    /* text-align: center; */
+    color: orange;
+    vertical-align: top;
+    text-decoration-line: line-through;
+    text-decoration-line: overline;
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-style: dashed;
+    text-decoration-style: double;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 4px;
+    text-decoration: overline purple solid 6px;
+}
+
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    text-indent: 10px;
+    letter-spacing: 8px;
+}

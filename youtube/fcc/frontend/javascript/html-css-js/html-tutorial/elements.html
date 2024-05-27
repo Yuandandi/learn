@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <pre> 
+    <!-- ********** ELEMENTS OR TAG ********** -->
+    <!-- <element name> element content </closing element name should have the same name> -->
+    <!-- evertything in between opening and closing element, which called element content will be displayed in the web -->
+
+    <!-- ********** HEADING TAG ********** -->
+    <h1>First heading</h1>
+    <h2>Second heading</h2>
+    <h3>Third heading</h3>
+    <h4>Fourth heading</h4>
+    <h5>Fifth heading</h5>
+    <h6>Sixth heading</h6>
+
+    <!-- ********** HEADING SIZING ********** -->
+    <!-- <h1>: 32px (2em) -->
+    <!-- <h2>: 24px (1.5em) -->
+    <!-- <h3>: 18.72px (1.17em) -->
+    <!-- <h4>: 16px (1em) -->
+    <!-- <h5>: 13.28px (0.83em) -->
+    <!-- <h6>: 10.72px (0.67em) -->
+
+    <!-- ********** P TAG ********** -->
+    <!-- not bold, 16px like h3 does-->
+    <!-- <p>: 16px same as h4 -->
+    <!-- Using proportional or variable-width font, such "times new rowman" or "sans serif" ensure more readability -->
+    <p title="one">
+    This is a test paragraph<br>This Is a new line
+    </p> 
+    <!-- title ; displayed When you hover over It -->
+    <!-- <br> ; break tag will break your text into a new line -->
+
+    <!-- ********** PRE TAG ********** -->
+    <!-- <pre> ; formatted text element, exactly as written in HTML file -->
+    <!-- use monospaced or fixed width font such as "courier new" or "consolas" useful for preserving the formatting of code, ASCII art -->
+    <pre>
+    your first line<hr>
+    your second line
+    your third line
+    </pre>
+
+    <!--  ********** <hr> tag ********** -->
+    <hr> ; horizontal rule in HTML document. create separation between different sections of content
+
+    <!-- ********** ATTRIBUTE AND ATTRIBUTE VALUE ********** -->
+    <!-- href is one of the HTML attribute hypertext reference -->
+    <!-- passing https://google.com which value of the attribute href -->
+    <a href="https://google.com">Click this link</a>
+
+    <!-- ********** SELF CLOSED TAG ********** -->
+    <!-- doesn't take a value -->
+    <!-- src ; (link or your local file)" -->
+    <!-- height ; default number in pixels -->
+    <!-- width ; default number in pixels -->
+    <!-- alt ; alternative if your image is not available the value of alt attribute will be displayed -->
+    <img src="https://illustoon.com/photo/8064.png" alt="dice images" height="200" width="200"> 
+
+    <!-- ********** <b> tag  ********** -->
+    <!-- <b> ; stands for bold -->
+    <!-- if you didn't wrap with p tag will move It into a new line -->
+    <!-- without conveying any extra importance or urgency like <strong> tag do -->
+    <b>this is bold text</b>
+
+    <!-- ********** strong tag ********** -->
+    <!-- used to highlight importang words or phrases within existing text content -->
+    <!-- renders text in bold by default without changing the block structure -->
+    <strong>this line is so strong</strong>
+
+    <!-- <em> tag -->
+    <!-- emphasis ; using italic fonts but It has a level of importance -->
+    <em>this is emphasis text</em>
+
+    <!-- <i> tag </i> -->
+    <!-- no semantic meaning, just for styling -->
+    <i>this is italic tags</i>
+
+    <!-- mark tag -->
+    <!-- used to highlight or mark text for reference or emphasis. default rendered with a yellow background -->
+    <!-- you can style the color and font weight  of the background mark tag --> 
+    <mark>mark this line</mark>
+
+    <!-- <del> tag </del> -->
+    <!-- tag defines text has been deleted from a document. -->
+    <!-- strike a line through deleted "text -->
+    don't do this <del>Do It</del>
+
+    <!-- small tag -->
+    <!-- smaller text like copyright and other side-comments -->
+    <!-- this size is 80% of the parent tag, so if you wrap this tag wihtin <h2> that has 20 px, the small tag will have 16px the -->
+    <small>this is small text</small>
+
+    <!-- <sub> tag </sub> -->
+    <!-- subscript text, appears half a character below the normal line, --> 
+    <!-- smaller font -->
+    O<sub>2</sub>
+
+    <!-- SUP -->
+    <!-- superscript text, appears half a character above the normal line -->
+    7<sup>3</sup>
+
+    <!-- DIV -->
+    <!-- divisionor a section in a HTML document -->
+    <!-- used as a container for HTML elements -->
+    <!-- easily styled by Using the class or id attribute -->
+    <!-- any sort of content can be put iside the div tag -->
+    <!-- as a wrapper to easily style child element -->
+    <div style="color:green;">
+      <h3>heading 3 inside a div as a container</h3>
+      <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+    </div>
+    <div style="color:orange;">
+      <h3>heading 3 inside a div as a container</h3>
+      <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+    </div>
+
+    <!-- IFRAME -->
+    <!-- specifies an inline frame -->
+    <!-- an inline frame is used to embed another document within the current HTML document -->
+
+    <!-- allow 	  	         ; Specifies a feature policy for the <iframe> -->
+    <!-- allowfullscreen     ; (true, false) Set to true if the <iframe> can activate fullscreen mode by calling the requestFullscreen() method -->
+    <!-- allowpaymentrequest ; (true, false) Set to true if a cross-origin <iframe> should be allowed to invoke the Payment Request API -->
+    <!-- height 	         ; pixels 	Specifies the height of an <iframe>. Default height is 150 pixels -->
+    <!-- loading 	         ; (eager, lazy) Specifies whether a browser should load an iframe immediately or to defer loading of iframes until some conditions are met -->
+    <!-- name 	             ; text 	Specifies the name of an <iframe> -->
+
+    <!-- referrerpolicy 	 ;Specifies which referrer information to send when fetching the iframe -->
+    <!-- no-referrer -->
+    <!-- no -referrer-when-downgrade -->
+    <!-- origin -->
+    <!-- origin-when-cross-origin -->
+    <!-- same -origin -->
+    <!-- strict -origin-when-cross-origin -->
+    <!-- unsafe -url -->	
+
+    <!-- sandbox          	 ; Enables an extra set of restrictions for the content in an <iframe> -->
+    <!-- allow-forms -->
+    <!-- allow -pointer-lock -->
+    <!-- allow -popups -->
+    <!-- allow -same-origin -->
+    <!-- allow -scripts -->
+    <!-- allow -top-navigation -->
+
+    <!-- src 	; URL Specifies the address of the document to embed in the <iframe> -->
+    <!-- srcdoc 	; HTML_code Specifies the HTML content of the page to show in the <iframe> -->
+    <!-- width 	; pixels Specifies the width of an <iframe>. Default width is 300 pixels -->
+
+    The <iframe> tag also supports the Global Attributes in
+      <iframe src="https://www.w3schools.com" style="border:none;" title="w3schools site"></iframe>
+
+    </pre>
+  </body>
+</html>

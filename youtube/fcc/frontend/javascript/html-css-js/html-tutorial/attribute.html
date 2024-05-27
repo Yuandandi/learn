@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+
+    <!-- REL -->
+    <!-- specifies the relationship between the current document and linked document -->
+    <!-- only used When href being used -->
+    <!-- alternate  ; Provides a link to an alternate representation of the document (i.e. print page, translated or mirror) -->
+    <!-- author	    ; Provides a link to the author of the document -->
+    <!-- bookmark	; Permanent URL used for bookmarking -->
+    <!-- external	; Indicates that the referenced document is not part of the same site as the current document -->
+    <!-- help	    ; Provides a link to a help document -->
+    <!-- license	; Provides a link to licensing information for the document -->
+    <!-- next	    ; Provides a link to the next document in the series -->
+    <!-- nofollow	; Links to an unendorsed document, like a paid link. ("; nofollow" is used by Google, to specify that the Google search spider should not follow that link) -->
+    <!-- noopener	; Requires that any browsing context created by following the hyperlink must not have an opener browsing context -->
+    <!-- noreferrer	; Makes the referrer unknown. No referer header will be included when the user clicks the hyperlink -->
+    <!-- prev	    ; The previous document in a selection -->
+    <!-- search	    ; Links to a search tool for the document -->
+    <!-- tag	    ; A tag (keyword) for the current document -->
+    <link rel="icon" href="./fcc.webp">
+
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <pre>
+
+    <!-- STYLE -->
+    <!-- override any style set globally -->
+    <!-- inline styling command -->
+    <!-- more style separate It with ";" -->
+    <h1 style="color:blue; background-color:red">this is my heading</h1>
+
+    <!-- TARGET -->
+    <!-- where to open the linked document -->
+    <!-- _blank ; new window or tab -->
+    <!-- _self  ; the same frame as It was clicked -->
+    <!-- _parent ; in the parent frame -->
+    <!-- _top ; full body of the window -->
+    <!-- if you put only google.com It will look into relative document, meaning document in your local file relative to the current file -->
+    <a href="https://google.com" target="_blank">google</a>
+
+    <!-- HREF -->
+    <!-- specifies the URL of ht epage the link goes to -->
+    <!-- if the href attribute is not present, the <a> tag will not be a hyperlink -->
+    <!-- mailto:yourmail@gmail.com ; link to an email address -->
+    <!-- tel:+629340293840 ; link a phone number -->
+    <!-- #section2 ; link to another section on the same page -->
+    <!-- javascript:alert("hello world!") ; execute a javascript-->
+    <a href="mailto:danozor@gmail.com">danzor</a>
+
+    </pre>
+  </body>
+</html>

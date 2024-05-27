@@ -1,0 +1,9 @@
+p.font-el {
+    /* font-family: arial, helvatica, sans-serif; */
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: italic;
+    font-style: oblique;
+    font-weight: bold;
+    font-weight: normal;
+    font-size: 2em; /* 2 times size of the current font */
+}
