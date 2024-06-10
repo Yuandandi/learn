@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    height: 100vh;
+    background-color: #282D35;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    height: 90px;
+    padding: 30px 25px;
+}
+
+nav > h3, nav > h4 {
+    margin: 0;
+}
+
+nav > h3 {
+    margin-right: auto;
+    color: #DEEBF8;
+    font-weight: 700px;
+    font-size: 22px;
+}
+
+nav > h4 {
+    color: #DEEBF8;
+    font-weight: 600px;
+}
+
+.nav--logo_text, .nav--title {
+    margin: 0;
+}
+
+.nav--logo_text {
+    margin-right: auto;
+    color: #61DAF8;
+    font-weight: 700px;
+    font-size: 22px;
+}
+
+.nav--title {
+    color: #DEEBF8;
+    font-weight: 700px;
+}
+
+.nav--icon {
+    height: 30px;
+    margin-right: 7px;
+}
+
+main {
+    padding: 55px 27px;
+    color: white;
+    background-image: url('src/images/react-icon-small.png');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: right 55%;
+}
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.main--facts {
+    margin-top: 46px;
+}
+
+.main--facts > li{
+    font-size: 19px;
+    padding-block: 10px; /* padding top botton eact item of a text */
+    max-width: 400px; /* max widt of a text */
+}
+
+.main--facts > li::marker { /* marker fairly new pseudo element select the bullet on a list <li> or <summary> can be number or romawi too*/
+    font-size: 1.4rem;
+    color: #61DAF8;
+}

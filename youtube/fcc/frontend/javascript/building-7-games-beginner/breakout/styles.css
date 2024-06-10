@@ -1,0 +1,15 @@
+.grid {
+    position: absolute; /* make It move inside the same container */
+    width: 600px;
+    height: 200px;
+    border: solid black 1px;
+}
+
+.block {
+    position: absolute; /* with this */
+    width: 100px;
+    height: 20px;
+    background-color: blue;
+    left: 50px;
+    bottom: 50px;
+}

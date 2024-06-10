@@ -1,0 +1,7 @@
+setup
+
+npx crate-react-app DIRECTORY
+cd DIRECTORY
+npm start
+
+launched in port
