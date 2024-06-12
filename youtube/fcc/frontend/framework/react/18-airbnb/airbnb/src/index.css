@@ -48,10 +48,12 @@ section {
     position: relative;
 }
 
+/* horizontal scrolling; */
 .cards-list {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-column: 25%;
+    display: flex;
+    flex-wrap: nowrap ;
+    gap: 20px;
+    overflow-x: auto;
 }
 
 .card--image {
@@ -72,4 +74,18 @@ section {
 
 .card--star {
     width: 20px;
+}
+
+.card--price {
+    height: 14px;
+}
+
+.card--badge {
+    position: absolute; /* make It inside of the image */
+    top: 6px;
+    left: 6px;
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 6px;
+    font-weight: bold;
 }

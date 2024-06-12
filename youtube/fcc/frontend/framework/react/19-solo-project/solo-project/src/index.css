@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background-color: #f77631;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;    /* Centers items vertically */
+}
+
+.nav-title {
+    color: #fff;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.mount-image {
+    width: 410px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.mount-description {
+    max-width: 50%;
+}
+
+.navbar {
+    bottom: 40px;
+}

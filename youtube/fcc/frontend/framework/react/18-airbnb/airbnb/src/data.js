@@ -10,7 +10,7 @@ export default [
             reviewCount: 6,
         },
         location: "online",
-        openSports: 0,
+        openSpots: 0,
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ export default [
             reviewCount: 30,
         },
         location: "online",
-        openSports: 27,
+        openSpots: "online",
     },
     {
         id: 3,
@@ -36,6 +36,6 @@ export default [
             reviewCount: 3,
         },
         location: "Norway",
-        openSports: 13,
+        openSpots: 13,
     },
 ]
