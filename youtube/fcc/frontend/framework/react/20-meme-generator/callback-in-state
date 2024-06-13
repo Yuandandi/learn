@@ -1,0 +1,13 @@
+Yes, using setCount(prevCount => prevCount - 1); is considered a best practice in React for updating state that depends on the previous state. This approach ensures that the state update is correctly handled even if multiple updates are queued, which can happen due to the asynchronous nature of state updates in React.
+
+Here's a more detailed explanation:
+Why It’s Best Practice
+
+    Correct State Update:
+    By using a function inside setCount, you ensure that you are working with the latest state value. React may batch multiple state updates for performance reasons, and if you directly use setCount(count - 1);, you might not be working with the latest state if another state update was processed in between.
+
+    Avoiding Race Conditions:
+    Using the functional form of setCount helps prevent race conditions where state updates might be based on stale values, especially in scenarios involving asynchronous updates or event handlers.
+
+    Consistency:
+    This approach makes your code more predictable and consistent, especially when multiple state updates are happening simultaneously or in quick succession.

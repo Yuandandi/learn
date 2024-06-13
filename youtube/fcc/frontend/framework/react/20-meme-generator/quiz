@@ -1,0 +1,16 @@
+1. you have 2 option for What you can pass in to a state setter function (e.g.
+        `setCount`). What are They?
+a. new value of the state (setCount(42)) will return 42
+b. callback function - whatever the callback function return == new value of the
+state
+
+2. When would you want to pass the first option (from answer above) to the state
+setter function?
+whenever you DON'T need the pverious value of state to determine What the new
+value of state should be
+
+3. When would you want to pass the second option (from answer above) to the
+state setter function?
+whenever you DO need the pverious value of state to determine What the new
+value of state should be
+
