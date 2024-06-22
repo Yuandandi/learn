@@ -16,45 +16,6 @@ function App() {
 
 export default App;
 
-// // UPDATING STATE OBJECT
-// function App() {
-    // const [contact, setContact] = React.useState({
-    //     firstname: "John",
-    //     lastname: "Doe",
-    //     phone: "+1 (719) 5551212",
-    //     email: "itsmyrealname@example.com",
-    //     isFafourite: false,
-    // })
-
-    // let starIcon = contact.isFafourite ? "filled-star.png" : "empty-star.png"
-
-    // function toggleFavourite() {
-    //     setContact(prevContact => ({
-    //         ...contact,
-    //         isFafourite: !contact.isFafourite
-    //     }))
-    // }
-
-    // return (
-    //     <main>
-    //         <article className="card">
-    //             <img src="./person.png" alt="user image" className="card-image"/>
-    //             <div className="card-info">
-    //                 <img 
-    //                 src={`./${starIcon}`} 
-    //                 className="card-favourite"
-    //                 onClick={toggleFavourite}
-    //             />
-    //                     <p className="card-contact">{contact.phone}</p>
-    //                     <p className="card-contact">{contact.email}</p>
-    //                     <h2 className="card-name">
-    //                         {contact.firstname} {contact.lastname}
-    //                     </h2>
-    //                 </div>
-    //             </article>
-    //         </main>
-    // )
-// }
 // export default App;
     // // function toggleFavourite() {
     // //     setContact(prevContact => {

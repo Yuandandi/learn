@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.card-image {
+    width: 300px;
+}
+
+.card-favourite {
+    width: 100px;
+};

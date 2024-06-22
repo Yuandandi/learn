@@ -1,0 +1,10 @@
+"use strict";
+let person;
+person = ["foo", 3, true];
+console.log({ person });
+let rgb;
+rgb = [255, 132, 112];
+console.log({ rgb });
+const penggunaBaru = [112, "example@foo.com"];
+penggunaBaru.push("fooooo");
+console.log({ penggunaBaru });
