@@ -1,4 +1,4 @@
-// // String{{{
+// String{{{
 // const firstName = "Sara";
 
 // const output = firstName;
@@ -49,3 +49,7 @@
 // console.log(sayHello); // [Function: sayHello]
 // // https://262.ecma-international.org/5.1/#sec-11.4.3
 // // }}}
+
+
+const h1 = document.getElementById("h1")
+console.log(h1)

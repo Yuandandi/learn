@@ -1,0 +1,31 @@
+es2016 will use let
+es5 will use var
+
+rootdir ; your main ts Directory
+outdir ; your compiled ts to js Directory
+
+add this into config in the end of the line
+if you add a new file in root It won't compiled
+"include": [
+    "src"
+]
+
+tsc --noEmitOnError -w ; will override the config
+
+strongly typed languages ; demand the specification of types
+ts is strongly typed language 
+
+loosely typed languages ; do not require type specification
+js is loosely typed languages / weakly typed languages 
+
+static typing and dynamic type is not related with strong type or loosely type
+
+a language that is strongly typed can be eitehr statically or dynamically typed
+
+ts is statically typed language ; types are checked at 'compile' time
+js is dynamically typed language ; types are checked at 'run' time
+
+ts benefits ; 
+- self-documenting
+- catch errors in dev!
+- great for teams
