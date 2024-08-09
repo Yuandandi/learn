@@ -1,0 +1,4 @@
+Generics
+1. add flexibility to existing functions, types, etc.
+2. act like function parameters, but for types
+3. sue angle bracket syntax (<>))
