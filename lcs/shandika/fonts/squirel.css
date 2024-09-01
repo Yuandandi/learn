@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Kaushan Script"; /* you can name anything, better follow the absolute name */
+    src: url('KaushanScript-Regular.otf') format("truetype"); /* .ttf and .otf is format truetype */
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "Kaushan Script", arial; /* passing the font-face name */
+}

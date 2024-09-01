@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+<style>
+
+body {
+  text-align: center;
+}
+img {
+  /* -webkit-filter: blur(30px); /1* chrome and safari need this *1/ */
+  /* filter: blur(30px); /1* Gaussian blare *1/ */
+  /* filter: brightness(1.4); /1* 140% gelap atau terangnya gambar*/
+  /* filter: contrast(150%); */
+  /* filter: saturate(150%); /1* makin berwarna *1/ */
+  /* filter: grayscale(100%); /1* makin abu-abu *1/ */
+  /* filter: sepia(100%); /1* yellowing *1/ */
+  /* filter: hue-rotate(100deg); /1* memutar roda warna 100 derajat *1/ */
+  /* filter: invert(1); /1*  negative effect film *1/ */
+  /* filter: opacity(.5); /1* element more transparent *1/ */
+  /* opacity: .5; /1* the result is the same as above, but better to use filter because It Using mathematical processing in the backgroud of user device, faster load (hardware acceleration)*1/ */
+  /* filter: drop-shadow(5px 5px 5px black); /1* can be implement onto both box-shadow and text-shadow *1/ */
+  filter: blur(5px) grayscale(1); /* both filter applied */
+  transition: .5s;
+}
+
+img:hover {
+  filter: blur(0) grayscale(0);
+}
+
+</style>
+  </head>
+  <body>
+    <img src="car.png" alt="mobil keren" />
+    <p>jaka sembung bawa golok</p>; 
+  </body>
+</html>

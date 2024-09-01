@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    /* transition: 1s; */ /* secara default itu transform: all 1s; */
+    transition: margin-left 1s; /* only applied margin-left */
+}
+
+.container {
+    width: 900px;
+    margin: 10px auto;
+    border: 3px solid #fff;
+}
+
+.container:hover .kotak { /* wrap 'kotak' dengan 'kontainer' agar tidak patah patah */
+    transform: rotate(180deg);
+    margin-left: 800px;
+    background-color: royalblue;
+}

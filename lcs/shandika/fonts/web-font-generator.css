@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "source code pro light";
+    src: url('SourceCodePro-Light.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "source code pro light";
+}
+
+/* why woff/woff2? */
+/* - web open file format */
+/* - maintain by mozila */
+/* - made for website */
+/* - faster load than any other font type */
+/* - ttf/otf compressed */
+
+/* you can change your font type by web font Generator */

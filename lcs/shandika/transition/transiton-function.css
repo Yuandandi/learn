@@ -1,0 +1,43 @@
+/* Timing Function *//* {{{ */
+/* ease */
+/* ease-in */
+/* ease-out */
+/* ease-in-out */
+/* linear *//* }}} */
+
+div {
+
+}
+
+.container {
+    width: 900px;
+    margin: 10px auto;
+    border: 3px solid #fff;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    /* transition: all 1s; /1* constant speed *1/ */
+    transition: all 1s ease; /* fast-slower */
+    /* transition: all 1s ease-in; /1* slow-faster *1/ */
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+    /* transition: margin-left, transform 3s 2s, background-color 2s 3s */
+    /* aksi durasi delay */
+}
+
+.kotak1 { transition: all 3s ease }
+.kotak2 { transition: all 3s ease-in }
+.kotak4 { transition: all 3s ease-out }
+.kotak3 { transition: all 3s ease-in-out }
+.kotak5 { transition: all 3s linear }
+.kotak6 { transition: all 3s cubic-bezier(.24, -0.35, .78, 1.46) } /* you can inspect and edit the curve */
+
+.container:hover .kotak{
+    transform: rotate(720deg);
+    margin-left: 800px;
+    background-color: royalblue;
+}

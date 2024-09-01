@@ -1,0 +1,66 @@
+/* animation Using keyframes syntax */
+/* @keyframes [name] { */
+/*     form { */ /* you can use percenteage too here */
+/*         [property-css] */
+/*     } */
+/*     to { */
+/*         [property-css] */
+/*     } */
+/* } */
+.kotak {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    /* transition: 2s ease all; /1* Using transition to make It smoother *1/ */
+}
+.kotak:hover {
+    /* width: 500px; /1* immediate change  *1/ */
+    /* animation: animasiKotak 2s ease 2; */ /* repeat 2 times */
+    /* animation: animasiKotak 2s ease infinite; /1* infinite loop *1/ */
+    /* animation: animasiKotak 2s ease infinite reverse; /1* reverse from 100% to 0% *1/ */
+    /* animation: animasiKotak 2s ease infinite alternate; /1* back and forth *1/ */
+    /* animation: animasiKotak 2s ease infinite alternate-reverse; /1* back and forth from 100 to 0 *1/ */
+    animation: animasiKotak 2s ease infinite alternate-reverse forwards; /* back and forth from 100 to 0 stop at the last condition */
+    /* animation: animasiKotak 3s ease infinite alternate-reverse forwards paused; /1* here doesent work but good to applied in JavaScript *1/ */
+
+    /* do It one by one */
+    /* animation-name: animasiKotak; */
+    /* animation-duration: 2s; */
+    /* animation-timing-function: ease; */
+    /* animation-iteration-count: infinite; */
+
+}
+/* you can do this with form two keyword if only 2 conditoin you want to applied */
+/* @keyframes animasiKotak { */
+/*     form { */
+/*         width: 200px; */
+/*     } */
+/*     to { */
+/*         width: 500px; */
+/*     } */
+/* } */
+/* animation with percentage */
+/* by default It will go back to original form after 100% */
+@keyframes animasiKotak {
+    0% {
+        width: 200px;
+    }
+    50% {
+        width: 500px;
+        height: 200px;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+    }
+}
+/* animation properties */
+/* animation: [name] [duration] [timing-function] [delay] [iterating-count] [direction] [fill-mode] [play-state]; */
+/* name            ; keyframes name */
+/* duration        ; same like transition */
+/* timing-function ; same like transition */
+/* delay           ; same like transition */
+/* iteration-count ; [number] [infinite] default is 1 */
+/* direction       ; def:normal reverse alternate alternate-reverse */
+/* fill-mode       ; def:none forwards backwards both */
+/* play-state      ; def:running paused */

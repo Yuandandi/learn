@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow more</title>
+    <style>
+div {
+  width: 300px; /* lebar */
+  height: 300px; /* tinggi */
+  background-color: green; /* warna */
+  margin: 50px auto; /* 50px dari atas, kanan kiri sama jaraknya (jadi di tengah) */
+  /* box-shadow: 20px 0px 0px 0px blue; /1* kanan 20px *1/ */
+  /* box-shadow: 0px 20px 0px 0px blue; /1* bawah 20px *1/ */
+  /* box-shadow: 0px 0px 20px 0px blue; /1* tingkat blur 20px (gabisa - minus) *1/ */
+  /* box-shadow: 20px 20px 0px 0px blue; /1* tingkat blur 0px berarti kaya object baru gaada blurnya *1/ */
+  /* box-shadow: 20px 20px 0px 40px blue; /1* shadownya makin lebar 40px atas bawah kiri kanan *1/ */
+  /* box-shadow: 20px 20px 0px 0px rgba(0, 0, 255, .75); /1* red 0, green 0, blue 255 (warna solid blue), alpha number opaque level*/
+  /* box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, .75);  /1* seperti border, padahal hanya box-shadow yang wider dan tingkat shadow 0; solid color *1/ */
+  /* multiple border *//* {{{ */
+  /* box-shadow multiple color: */ 
+  /* 0px 0px 0px 5px orange, */
+  /* 0px 0px 0px 10px red, */
+  /* 0px 0px 0px 15px yellow, */
+  /* 0px 0px 0px 20px blue; */
+  /* /1* border-radius: 50%; *1/ /1* lingkaran multiple border *1/ *//* }}} */
+  box-shadow: 0px 40px 10px -20px rgba(0, 0, 0, .75);  /* seperti border, padahal hanya box-shadow yang wider dan tingkat shadow 0; solid color */
+  transition: .3s;
+  div:hover {
+    box-shadow: 0px 70px 10px -40px rgba(0, 0, 0, .15);  /* seperti border, padahal hanya box-shadow yang wider dan tingkat shadow 0; solid color */
+    margin-top: 40px;
+  }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    background-image: url(car.png);
+}
+
+.satu {
+    height: 300px;
+    width: 300px;
+    background-color: #f60;
+    opacity: .8;
+    position: relative;
+}
+
+.dua {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    opacity: .5; /* 25% transpaation from the original becuse It inherit from the class=one */
+}

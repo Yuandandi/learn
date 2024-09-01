@@ -1,0 +1,24 @@
+div {
+    width: 800px;
+    height: 500px;
+    margin: 50px auto;
+    color: red;
+    /* background-image: linear-gradient(red, green); /1* red above green below *1/ */
+    /* background-image: linear-gradient(red, #f0d808, rgba(255, 255, 0, 1), green); /1* able to render more than two color *1/ */
+
+    /* with angle degree */
+    /* background-image: linear-gradient(90deg, red, green); /1* left to right *1/ */
+    /* background-image: linear-gradient(-90deg, red, green); /1* right to left *1/ */
+    /* background-image: linear-gradient(45deg, red, green); /1* bottom left to top right *1/ */
+    
+    /* with direction; */
+    /* background-image: linear-gradient(to right, red, green); */
+    /* background-image: linear-gradient(to left, red, green); */
+    /* background-image: linear-gradient(to bottom right, red, green); */
+    /* background-image: linear-gradient(to bottom left, red, green); */
+    /* background-image: linear-gradient(to top left, red, green); */
+    /* background-image: linear-gradient(to top right, red, green); */
+
+    /* mengatur bobot warna */
+    background-image: linear-gradient(to right, red 63%, green 80%);
+}

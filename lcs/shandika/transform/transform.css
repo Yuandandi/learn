@@ -1,0 +1,40 @@
+/* property transform memungkinkan kita dapat memanipulasi format visual dari element html*/
+/* scale       ; memperbesar/memperkecil */
+/* rotate      ; memutar */
+/* skew        ; condong/miring */
+/* translate   ; mengubah posisi */
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.kotak {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto;
+    transition: 1s;
+}
+
+.kotak:hover {
+    /* transform: scale(2); /1* two times bigger *1/ */
+    /* transform: scale(.5); /1* two times smaller *1/ */
+    /* transform: scale(1.5, 2); /1* width, height *1/ */
+    /* transform: scaleX(1.5) scaleY(2); /1* same as above *1/ */
+
+    /* transform: rotate(45deg); /1* clockwise *1/ */
+    /* transform: rotate(-45deg); /1* counter clockwise *1/ */
+    /* transform: rotateX(90deg); /1* sumbu horizontal *1/ */
+    /* transform: rotateY(90deg); /1* sumbu vertikal *1/ */
+    /* transform: rotate(180deg) rotateX(180deg) rotateY(180deg); /1* multiple transform *1/ */
+    
+    /* transform: skew(45deg); /1* miring kiri *1/ */
+    /* transform: skew(-45deg); /1* miring kanan *1/ */
+    
+    /* transform: translate(50px); /1* geser kanan *1/ */
+    /* transform: translate(-50px); /1* geser kiri *1/ */
+    /* transform: translate(50px, 50px); /1* geser kanan bawah *1/ */
+    
+    transform: scale(2) rotate(360deg); /* multiple transform values */
+}

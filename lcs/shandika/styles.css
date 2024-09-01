@@ -1,0 +1,9 @@
+div {
+    width: 400px;
+    height: 300px;
+    /* margin: 50px auto; */
+    background-color: orange;
+    border-radius: 20px;
+}
+
+/* border-radius: is part of css 3, back in the days we do It mannually with the help of photoshop and aplied each borders4 */

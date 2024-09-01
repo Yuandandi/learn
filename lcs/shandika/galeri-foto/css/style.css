@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "BebasNeue";
+    src: url('../fonts/BebasNeue-Regular.woff') format(woff);
+}
+
+body {
+    /* size and line-height */
+    font: 18px/36px "BebasNeue", "Arial Narrow", Arial, sans-serif;
+    background-color: #ccc;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 40px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.container {
+    width: 600px;
+    background-color: #fff;
+    margin: auto;
+    padding: 35px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+    border-radius: 13px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden; /* agar gambar yang terkena border lingkaran dan elemen diluarnya tidak nampak */
+    border: 5px solid #666;
+    float: left; /* default list is block kebawah, tambahin ini agar gambar ke samping */
+    margin-right: 20px;
+    position: relative;
+}
+
+.gallery li,
+.gallery li img,
+.gallery li span {
+    border-radius: 50%;
+}
+
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200,200,200,.5); /* kehalang overflow */
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0);
+    transition: .3s;
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear {
+    clear: both; /* agar div tidak crop collapse dengan profile depan */
+}
+

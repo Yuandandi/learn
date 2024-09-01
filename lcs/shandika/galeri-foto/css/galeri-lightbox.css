@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "BebasNeue";
+    src: url('../fonts/BebasNeue-Regular.woff') format(woff);
+}
+body {
+    /* size and line-height */
+    font: 18px/36px "BebasNeue", "Arial Narrow", Arial, sans-serif;
+    background-color: #ccc;
+}
+h1 {
+    font-size: 80px;
+    margin: 40px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px #fff;
+}
+.container {
+    width: 600px;
+    background-color: #fff;
+    margin: auto;
+    padding: 35px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+    border-radius: 13px;
+}
+.gallery li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden; /* agar gambar yang terkena border lingkaran dan elemen diluarnya tidak nampak */
+    border: 5px solid #666;
+    float: left; /* default list is block kebawah, tambahin ini agar gambar ke samping */
+    margin-right: 20px;
+    position: relative;
+}
+.gallery li, .gallery li img, .gallery li span {
+    border-radius: 50%;
+}
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200,200,200,.5); /* kehalang overflow */
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0);
+    transition: .3s;
+}
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+.clear {
+    clear: both; /* agar div tidak crop collapse dengan profile depan */
+}
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed; /* scroll tidak mengganggu overlay */
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0); /* overlay background */
+    z-index: 999; /* index dimajuin agar overlay dapet semua */
+    transition: .8s;
+    text-align: center;
+    padding: 100px;
+}
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0; /* overlay bottom right taro sini agar elementnya tarik-menarik saat ke trigger */
+    right: 0;
+    background: rgba(0,0,0,.7); /* overlay background */;
+}
+.overlay img {
+    max-height: 100%
+    box-shadow: 2px 2px 7px rgba(0,0,0,.8);
+}
+.overlay:target img {
+    animation: zoomDanFade 1s;
+}
+.overlay .close {
+    position: absolute;
+    top: 5;
+    left: 50%;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid #fff;
+    color: #fff;
+    line-height: 14px;
+    padding: 5px;
+    opacity: 0;
+}
+.overlay:target .close {
+    animation: slideDownFade .5s .5s forwards;
+}
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}

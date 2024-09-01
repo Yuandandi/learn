@@ -1,0 +1,12 @@
+/* Timing Function */
+/* ease */
+/* ease-in */
+/* ease-out */
+/* ease-in-out */
+/* linear */
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
