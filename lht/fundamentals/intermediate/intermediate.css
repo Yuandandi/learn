@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+:root {
+    --accent: #0fddad; /* variable in css */
+}
+.text {
+    color: red;
+    font-size: 50px;
+}
+.boxes {
+    height: 300px;
+    width: 600px;
+    background-color: #000;
+    /* justify-content: center; */
+    /* display: flex; */
+    /* /1* flex-direction: column; *1/ */
+    /* /1* flex-direction: column-reverse; *1/ */
+    /* flex-direction: column; */
+    /* /1* align-items: center; *1/ */
+    /* /1* align-items: end; *1/ */
+    /* align-items: center; */
+}
+.box {
+    height: 50px;
+    width: 50px;
+    /* background-color: yellow; */
+    background-color: var(--accent);
+    margin-bottom: 20px;
+    position: relative;
+    /* margin-top: 5px; */
+    /* margin-right: 5px; */
+    z-index: 5;
+}
+.box:nth-child(1) {
+    background-color: purple;
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    transform: translate(-50%, -50%);
+    position: absolute ;
+    top: 100px;
+}
+.heading {
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+.heading::after {
+    content: ""; /* add new text before element */
+    height: 5px;
+    width: 75px;
+    background-color: darkgoldenrod;
+    display: block; /* styling text, default is inline */
+}
+@media (max-width: 515px) { /* only applied if this condition met */
+    .boxes {
+        width: 300px;
+    }
+}

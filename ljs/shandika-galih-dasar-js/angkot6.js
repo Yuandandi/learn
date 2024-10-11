@@ -31,15 +31,15 @@ let angkotBeroperasi = 6;
 // {{{ Logicl Operator Inside a Condition better solution
 
 for (let noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
-  if (noAngkot <= 6 && noAngkot !== 5) {
-    // hwen noAngkot = 5 <= 6; true, but 5 !== 5 is false so the block below won't executed to to the next else if
-    console.log(`Angkot No. ${noAngkot} beroperasi dengan baik.`);
-  } else if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5) { 
-    // add new condition noAngkot === 5 so will execute the block
-    console.log(`Angkot No. ${noAngkot} sedang lembur.`);
-  } else {
-    console.log(`Angkot No. ${noAngkot} sedang tidak beroperasi.`);
-  }
+    if (noAngkot <= 6 && noAngkot !== 5) {
+        // hwen noAngkot = 5 <= 6; true, but 5 !== 5 is false so the block below won't executed to to the next else if
+        console.log(`Angkot No. ${noAngkot} beroperasi dengan baik.`);
+    } else if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5) { 
+        // add new condition noAngkot === 5 so will execute the block
+        console.log(`Angkot No. ${noAngkot} sedang lembur.`);
+    } else {
+        console.log(`Angkot No. ${noAngkot} sedang tidak beroperasi.`);
+    }
 }
 
-  / }}}
+// }}}

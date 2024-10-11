@@ -1,0 +1,55 @@
+p {
+    color: red;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.heading { /* more specific than above */
+    color: darkolivegreen-sample;
+    font-size: 50px;
+    animation: fade-in 2s;
+}
+h1 {
+    padding-left: 20px; /* inside border */
+    color: rgba(0, 255, 18, 0.5);
+    border: 2px solid #fff;
+    margin-left: 20px; /* outside border */
+}
+.img {
+    display: block; /* default image is inline, make It block you can adjust the margin */
+    margin: auto;
+    max-width: 400px;
+    min-height: 300;
+    animation: fade-in 2s;
+}
+.input {
+    display: block;
+    transition: 2s;
+}
+.input:focus {
+    transform: scale(2);
+}
+.text {
+    text-align: center;
+}
+.button {
+    /* transform: translateX(120px); /1* move to the right *1/ */
+    /* transform: rotate(50deg); */
+    transform: scale(1.5);
+    display: block;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.button:hover {
+    transform: scale(3);
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}

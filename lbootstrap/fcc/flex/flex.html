@@ -1,0 +1,115 @@
+<!-- {{{ Head-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"/>
+  </head>
+  <!-- }}} -->
+
+  <body>
+
+
+      <!-- {{{ Flex Behavior-->
+
+      <div class="border">
+          <!-- box level element -->
+          <div class="d-flex p-2 border">I'm a flexbox container!</div>
+
+          <!-- inline level element -->
+          <div class="d-inline-flex p-2 border">I'm an inline flexbox container!</div>
+          <!-- next inline with wrap in the same line -->
+          <div class="d-inline-flex p-2 border">I'm an inline flexbox container!</div>
+
+          <div class="d-sm-flex p-2 border">I'm an inline flexbox container!</div>
+
+          <div class="d-sm-inline-flex p-2 border">I'm an inline flexbox container!</div>
+          <div class="d-sm-inline-flex p-2 border">I'm an inline flexbox container!</div>
+
+          <div class="d-md-flex p-2 border">I'm an inline flexbox container!</div>
+          <div class="d-lg-flex p-2 border">I'm an inline flexbox container!</div>
+
+          <div class="d-lg-inline-flex p-2 border">I'm an inline flexbox container!</div>
+          <div class="d-lg-inline-flex p-2 border">I'm an inline flexbox container!</div>
+
+          <div class="d-xl-flex p-2 border">I'm an inline flexbox container!</div>
+
+          <div class="d-xl-inline-flex p-2 border">I'm an inline flexbox container!</div>
+          <div class="d-xl-inline-flex p-2 border">I'm an inline flexbox container!</div>
+      </div>
+
+      <!-- }}} -->
+      <!-- {{{ Direction-->
+      <p class="h1 mt-3">Direction</p>
+      <p>flex-row: from left to right</p>
+      <div class="d-flex flex-row border border-2 mt-2">
+          <div class="p-2">Flex item 1</div>
+          <div class="p-2">Flex item 2</div>
+          <div class="p-2">Flex item 3</div>
+      </div>
+      <p class="mt-2">flex-row-reverse; from right to left</p>
+      <div class="d-flex flex-row-reverse border border-2 flex-row-reverse">
+          <div class="p-2">Flex item 1</div>
+          <div class="p-2">Flex item 2</div>
+          <div class="p-2">Flex item 3</div>
+      </div>
+      <!-- }}} -->
+      <!-- {{{ Justify Content-->
+      <p class="h2 mt-5">Justify Content</p>
+      <p>Use justify-content utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to
+      start, y-axis if flex-direction: column). Choose from start (browser default), end, center, between, or around.
+      </p>
+      <div class="border border-dark d-flex justify-content-start">start</div>
+      <div class="border border-dark d-flex justify-content-end">end</div>
+      <div class="border border-dark d-flex justify-content-center">center</div>
+      <div class="border border-dark d-flex justify-content-between">between</div>
+      <div class="border border-dark d-flex justify-content-around">around</div>
+      <!-- }}} -->
+      <!-- {{{ Align Items-->
+      <p class="h1 mt-4">Align Items</p>
+      <p>Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start,
+      x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).
+      </p>
+      <div class="border border-dark flex align-items-start">start</div>
+      <div class="border border-dark flex align-items-end">end</div>
+      <div class="border border-dark flex align-items-center">center</div>
+      <div class="border border-dark flex align-items-baseline">baseline</div>
+      <div class="border border-dark flex align-items-stretch">stretch</div>
+      <!-- }}} -->
+      <!-- {{{ Align Self-->
+      <p class="h1 mt-4">Align Self</p>
+      <p>Use align-self utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from the same options as align-items: start, end, center, baseline, or stretch (browser default). </p>
+      <div class="border border-dark align-self-start">Aligned flex item</div>
+      <div class="border border-dark align-self-end">Aligned flex item</div>
+      <div class="border border-dark align-self-center">Aligned flex item</div>
+      <div class="border border-dark align-self-baseline">Aligned flex item</div>
+      <div class="border border-dark align-self-stretch">Aligned flex item</div>
+      <!-- }}} -->
+
+
+      <div class="container border col-10 border-dark mt-5">
+        <div class="d-flex align-content-stretch flex-wrap">...</div>
+        <div class="d-flex align-content-stretch flex-wrap">...</div>
+        <div class="d-flex align-content-stretch flex-wrap">...</div>
+      </div>
+
+      <!-- {{{ Script-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+              integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+              crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+              integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNu - 9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+              crossorigin="anonymous">
+      </script>
+      <!-- }}} -->
+  </body>
+</html>
+

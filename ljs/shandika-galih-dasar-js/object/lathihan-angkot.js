@@ -1,29 +1,29 @@
 // Angkot Function Constructor
 
 function Angkot(sopir, trayek, penumpang, kas) {
-  this.sopir = sopir;
-  this.trayek = trayek;
-  this.kas = kas;
-  this.penumpang = penumpang;
-  this.penumpangNaik = function (namaPenumpang) { // function inside an Object is a method
-    this.penumpang.push(namaPenumpang);
-    return this.penumpang;
-  };
-  this.penumpangTurun = function (namaPenumpang, bayar) {
-    // if empty then console
-    if (this.penumpang.length === 0) {
-      console.log("Angkot masih kosong");
-      return false; // to excit the blocks
-    }
-
-    for (let i = 0; i < this.penumpang.length; i++) {
-      if (this.penumpang[i] === namaPenumpang) {
-        this.penumpang[i] = undefined; // set penumpang yang turn onto undefined
-        this.kas += bayar; // add bayar onto kas
+    this.sopir = sopir;
+    this.trayek = trayek;
+    this.kas = kas;
+    this.penumpang = penumpang;
+    this.penumpangNaik = function (namaPenumpang) { // function inside an Object is a method
+        this.penumpang.push(namaPenumpang);
         return this.penumpang;
-      }
-    } 
-  }
+    };
+    this.penumpangTurun = function (namaPenumpang, bayar) {
+        // if empty then console
+        if (this.penumpang.length === 0) {
+            console.log("Angkot masih kosong");
+            return false; // to excit the blocks
+        }
+
+        for (let i = 0; i < this.penumpang.length; i++) {
+            if (this.penumpang[i] === namaPenumpang) {
+                this.penumpang[i] = undefined; // set penumpang yang turn onto undefined
+                this.kas += bayar; // add bayar onto kas
+                return this.penumpang;
+            }
+        } 
+    }
 }
 
 let angkot1 = new Angkot("Shandika Galih", ["Cicaheum", "Cibiru"], [], 0);

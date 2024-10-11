@@ -2,51 +2,51 @@ const root = document.querySelector("#root");
 
 // Inline Style (behave like an object so key:value, if the key has 2 or more word use camelcase, and ended with',')
 let element = /*#__PURE__*/React.createElement("div", {
-  style: {
-    width: 200,
-    height: 200,
-    backgroundColor: 'yellow'
-  }
+    style: {
+        width: 200,
+        height: 200,
+        backgroundColor: 'yellow'
+    }
 });
 // Refer to the App.Css File
 const className = "box";
 element = /*#__PURE__*/React.createElement("div", {
-  className: className
+    className: className
 });
 // Event Handler
 element = /*#__PURE__*/React.createElement("button", {
-  onClick: function () {
-    alert("foob");
-  }
+    onClick: function () {
+        alert("foob");
+    }
 }, "Click Me");
 // Event Handler With Call Function
 
 function buttonClicked() {
-  alert("foo");
+    alert("foo");
 }
 ;
 element = /*#__PURE__*/React.createElement("button", {
-  onClick: buttonClicked
+    onClick: buttonClicked
 }, "Click Me");
 // Event Handler With Call Function With a Parameter
 
 function menekanTombol(message) {
-  alert(message);
+    alert(message);
 }
 ;
 element = /*#__PURE__*/React.createElement("button", {
-  onClick: function () {
-    menekanTombol("You just clicked me right?");
-  }
+    onClick: function () {
+        menekanTombol("You just clicked me right?");
+    }
 }, "Click Me");
 // Event Handler With Call Function With a Parameter, '.bind' method and "this" keyword
 
 function tombolDitekan(message) {
-  alert(message);
+    alert(message);
 }
 ;
 element = /*#__PURE__*/React.createElement("button", {
-  onClick: tombolDitekan.bind(this, "You just clicked me right?")
+    onClick: tombolDitekan.bind(this, "You just clicked me right?")
 }, "Click Me");
 // // Simple React Component (destructured) React state
 // function App() { // Using pascal case
@@ -375,60 +375,60 @@ element = /*#__PURE__*/React.createElement("button", {
 
 // Simple TODO List Adding Remove Feature
 function App() {
-  // react state
-  const [activity, setActivity] = React.useState("");
-  onst[(todos, setTodos)] = React.useState([]); // todos; array of todos, setTodos; boundFunctionObject
+    // react state
+    const [activity, setActivity] = React.useState("");
+    onst[(todos, setTodos)] = React.useState([]); // todos; array of todos, setTodos; boundFunctionObject
 
-  // one of the solution to generate unique id because It will return a different everytime executed"
-  function generateId() {
-    return Date.now();
-  }
-  ;
-  function addTodoHandler(event) {
-    event.preventDefault(); // disable refresh
-    // console.log(activity) // console user type
-    // setTodos([activity]) // this only replace if user input more then one
-    setTodos([
-    // change the activity as an Object with "value" and "id" innIt
-    ...todos, {
-      id: generateId(),
-      activity: activity
-    }]); // ... spread operator (merge data)
-    setActivity(""); // after user submit will reset to placeholder 
-  }
-
-  // function removeTodoHandler(todoId) { // passing 'todoid' is What user clicked
-  //     const filteredTodos = todos.filter(function (todo) {
-  //         // console.log(todoId, todo.id) // this is all the list except your removed one
-  //         return todo.id !== todoId // return all the todo.id which not removed
-  //     })
-  //     // console.log(filteredTodos);
-  //     setTodos(filteredTodos) // move the list
-  // }
-
-  function removeTodoHandler(todoId) {
-    console.log(todos, setTodos, todoId) / console.log("foob");
-  }
-  ;
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Simple Todo List"), /*#__PURE__*/React.createElement("form", {
-    onSubmit: addTodoHandler
-  }, /*#__PURE__*/React.createElement("input", {
-    type: "text",
-    placeholder: "Nama Aktifitas" // default text on the input field
-    ,
-    value: activity // turn back onto activity
-    ,
-    onChange: function (event) {
-      setActivity(event.target.value); // stored every change user made in the input field
+    // one of the solution to generate unique id because It will return a different everytime executed"
+    function generateId() {
+        return Date.now();
     }
-  }), /*#__PURE__*/React.createElement("button", null, "Tambah")), /*#__PURE__*/React.createElement("ul", null, todos.map(function (todo) {
-    return /*#__PURE__*/React.createElement("li", {
-      key: todo.id
-    }, todo.activity, /*#__PURE__*/React.createElement("button", {
-      onClick: removeTodoHandler.bind(this, todo.id)
-    }, "Hapus")) // will look onto the id we want to remove
     ;
-  }))) // .bind() method ; creates a new function that When called all this function with it's "this" keyword set to the provided value
-  ; // we get new unique id and activity
+    function addTodoHandler(event) {
+        event.preventDefault(); // disable refresh
+        // console.log(activity) // console user type
+        // setTodos([activity]) // this only replace if user input more then one
+        setTodos([
+            // change the activity as an Object with "value" and "id" innIt
+            ...todos, {
+                id: generateId(),
+                activity: activity
+            }]); // ... spread operator (merge data)
+        setActivity(""); // after user submit will reset to placeholder 
+    }
+
+    // function removeTodoHandler(todoId) { // passing 'todoid' is What user clicked
+    //     const filteredTodos = todos.filter(function (todo) {
+    //         // console.log(todoId, todo.id) // this is all the list except your removed one
+    //         return todo.id !== todoId // return all the todo.id which not removed
+    //     })
+    //     // console.log(filteredTodos);
+    //     setTodos(filteredTodos) // move the list
+    // }
+
+    function removeTodoHandler(todoId) {
+        console.log(todos, setTodos, todoId) / console.log("foob");
+    }
+    ;
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Simple Todo List"), /*#__PURE__*/React.createElement("form", {
+        onSubmit: addTodoHandler
+    }, /*#__PURE__*/React.createElement("input", {
+        type: "text",
+        placeholder: "Nama Aktifitas" // default text on the input field
+        ,
+        value: activity // turn back onto activity
+        ,
+        onChange: function (event) {
+            setActivity(event.target.value); // stored every change user made in the input field
+        }
+    }), /*#__PURE__*/React.createElement("button", null, "Tambah")), /*#__PURE__*/React.createElement("ul", null, todos.map(function (todo) {
+        return /*#__PURE__*/React.createElement("li", {
+            key: todo.id
+        }, todo.activity, /*#__PURE__*/React.createElement("button", {
+            onClick: removeTodoHandler.bind(this, todo.id)
+        }, "Hapus")) // will look onto the id we want to remove
+        ;
+    }))) // .bind() method ; creates a new function that When called all this function with it's "this" keyword set to the provided value
+    ; // we get new unique id and activity
 }
 ReactDOM.render( /*#__PURE__*/React.createElement(App, null), root);

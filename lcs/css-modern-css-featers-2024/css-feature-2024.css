@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+ul li input:checked {
+    accent-color: #f806e4; /* default color is blue */
+}
+
+ul li:has(input:checked) { /* input will include all of them */
+    /* checked will include only the clicked one */
+    border: 2px solid #f806e4;
+}

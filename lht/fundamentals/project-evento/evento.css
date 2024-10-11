@@ -1,0 +1,135 @@
+body {
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    background-image: url('blue-sky.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-position-y: -50px;
+    background-position-x: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* viewport height, 100 meaning take all (100%) the height visible web content */
+    overflow-y: hidden; /* hide scrollbar */
+    margin: 0; /* fixed margin, 100vh */
+}
+.header {
+    display: flex;
+    align-items: center; /* no margin no padding */
+    justify-content: space-between; /* has the same width in between 2 sections */
+    width: 1150px; /* specify max width */
+    margin-left: auto; /* same as margin: auto */
+    margin-right: auto;
+    animation: fade-in .5s;
+    padding-top: 10px;
+}
+.logo {
+    font-size: 18px;
+}
+.links {
+    list-style: none;
+    display: flex;
+}
+.link-item {
+    margin-right: 25px;
+}
+.link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+    font-size: 14px;
+    transition: color .4s;
+}
+.link:hover {
+    color: rgba(255, 255, 255, 1)
+}
+.main {
+    text-align: center;
+    margin-top: 100px;
+    animation: fade-in .5s .1 backwards; /* animation name, duration, delay */
+}
+.heading {
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    max-width: 400px; /* It overline text-align: center*/
+    margin-left: auto;
+    margin-right: auto;
+    line-height: .9; /* defualt is 1.2 */
+}
+.text {
+    font-size: 24px;
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .8;
+    line-height: 1.4;
+}
+.text--bold {
+    font-weight: 700;
+}
+.form {
+    margin-top: 60px;
+}
+.btn {
+    border: none;
+    padding: 0;
+    background-color: #000;
+    height: 64px;
+    width: 133px;
+    color: #fff;
+    font: inherit;
+    border-radius: 4px;
+    margin-left: 9px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .4s;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #161616;
+}
+.input {
+    width: 511px;
+    height: 64px;
+    border: none;
+    padding: 0px;
+    border-radius: 6px;
+    opacity: .8;
+    padding-left: 30px; /* space in text input and the border */
+    font: inherit; /* default is not inherit */
+    outline: none; /* find replacement */
+}
+.input:focus {
+    transition: all .4s;
+    opacity: 1;
+}
+.input::placeholder {
+    color: #000;
+}
+.footer {
+    display: flex;
+    width: 1150px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: 12px; /* def paragraph is 16px=1em */
+    padding-bottom: 15px;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    padding-top: 10px;
+    color: rgba(255, 255, 255, .5);
+    animation: fade-in .5s .2s backwards;
+}
+.copyright {
+}
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+        translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        translateY(0);
+    }
+}

@@ -1,0 +1,13 @@
+span {
+    /* font-size: 6rem; */ /* root em */
+    /* font-size: 10vw; */ /* viewport width */
+    font-size: clamp (3rem, 10vw, 6rem);
+}
+
+
+/* @media (max-width: 700px) { */
+/*     span { */
+/*         font-size: 3rem; */
+/*         /1* Using rem on text will brings you onto many media queries, so use fluid typhography vw sizing *1/ */
+/*     } */
+/* } */

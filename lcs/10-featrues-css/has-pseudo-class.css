@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding: 50px;
+}
+input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 20px;
+    border: 3px solid #ccc;
+    margin-bottom: 20px;
+}
+button {
+    padding: 20px 30px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.random {
+    display: flex;
+    gap: 20px;
+}
+.random div {
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    background-color: lightsalmon;
+    transition: scale 300ms;
+    cursor: pointer;
+}
+.random div:hover {
+    scale: 1.2;
+}
+
+/* .random div:hover ~ div { /1* ~ general siblings combinator *1/ */
+/*     scale: .5; /1* use has pseudo class to scale down div except hovered diuse has pseudo class to scale down div except hovered divv *1/ */
+/* } */
+
+.random div:has(~ div:hover), /* combine these two */
+.random div:hover ~ div { /* ~ general siblings combinator */
+    scale: .5;
+}

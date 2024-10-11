@@ -1,0 +1,73 @@
+* { margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    /* width: 500px; */
+    /* height: 500px; */
+    width: 400px;
+    /* aspect-ratio: 1; */  /* shorthand 1/1 always square */
+    aspect-ratio: 3/2; /* shorthand, always refered to width */
+    background-color: pink;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.sky {
+    width: 50%;
+    aspect-ratio: 16/9;
+    padding-top: 100px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+}
+
+.card {
+    width: 100%;
+    aspect-ratio: 2/1;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.card .heading {
+    font-size: 6rem;
+    margin: 10px 0;
+    color: #000;
+    text-transform: capitalize; 
+}
+
+.card .summary {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+/* .card .heading, */
+/* .card .summary { */ /* same as below */
+.card :is(.heading, .summary) {
+    margin: 10px 0;
+    text-transform: capitalize;
+    color: orange;
+}
+
+.btn {
+    border: none;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 30px 60px;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: background-color 300ms, color 300ms;
+    display: block;
+    margin-top: 50px;
+}
+
+.btn:is(:hover, :focus) {
+    background-color: #000;
+    color: #fff;
+}

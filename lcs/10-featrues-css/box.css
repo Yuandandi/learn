@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 200px;
+    aspect-ratio: 1;
+    background-color: #000;
+    margin-bottom: 20px;
+    --main-color: orange;
+}
+
+div:nth-child(1) {
+    /* background-color: color-mix(in srgb, red, yellow) /1* becomes orange *1/ */
+    background-color: color-mix(in srgb, red 20%, yellow) /* yellow 80% meaning more onto yellow */
+}
+div:nth-child(2) {
+    background-color: color-mix(in srgb, var(--main-color), black 20%) /* darkening the color */
+}
+div:nth-child(3) {
+    background-color: color-mix(in srgb, var(--main-color), white 20%) /* darkening the color */
+}
+div:nth-child(4) {
+    background-color: color-mix(in srgb, var(--main-color), transparent 90%) /* transparenting the element */
+}

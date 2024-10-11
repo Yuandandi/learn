@@ -1,6 +1,8 @@
 const form = document.getElementById("item-form");
 
-// Using .value;{{{
+
+// {{{  Using .value;
+
 function onSubmit(e) {
     // without this It will only flash and submit into the site, and the console is not seen in console
     e.preventDefault(); // console.log("submit");
@@ -17,7 +19,9 @@ function onSubmit(e) {
     console.log(item, priority);
     // console.log(item, priority.value); // works the same
 
-}// }}}
+}
+
+// }}}
 // {{{  FormData() Object
 
 function onSubmit2(e) {

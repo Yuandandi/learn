@@ -35,5 +35,4 @@ console.log(x);
 // console.log(y); // y is not defined ; you can't access function scope in global area
 
 add(); // 50
-
 // }}}

@@ -1,0 +1,69 @@
+<!-- {{{ Head-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>components</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <!-- }}} -->
+  <body>
+
+    <div class="container">
+      <p class="h1 text-center text-capitalize">components</p>
+      <hr>
+
+      <!-- {{{ breadcrumb-->
+      <p class="h2 text-center text-capitalize">breadcrumb</p>
+      <p>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <!-- }}} -->
+      <!-- {{{ button-->
+
+      <p class="h2 text-capitalize">button</p>
+      <p>button sizing</p>
+      <button type="button" class="btn btn-warning btn-lg">Large button</button>
+      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+
+      <button type="button" class="btn btn-primary btn-sm">Small button</button>
+      <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+      <br><br>
+
+      <p>block level button</p>
+      <button type="button" class="btn btn-primary btn-lg btn-block ">Block level button</button>
+      <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+      <br><br>
+
+      <p>activate state</p>
+      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+      <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+
+      <a href="https://google.com/" class="btn btn-primary disabled" aria-pressed="true" role="button">Google</a>
+      <a href="https://google.com/" ari>Google</a>
+
+      <!-- }}} -->
+
+    </div>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html> 

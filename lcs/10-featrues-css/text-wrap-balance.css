@@ -1,0 +1,6 @@
+h2 {
+    max-width: 700px;
+    font-size: 2rem;
+    text-align: center;
+    text-wrap: balance;
+}

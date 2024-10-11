@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    border: 1px solid red;
+    justify-content: space-between;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 50px; /* row-gap column-gap */
+}
+
+.container div {
+    width: 100px;
+    height: 300px;
+    background-color: lightblue;
+    margin-bottom: 50px;
+    /* margin-right: 50px; */ /* this will make the last element has right margin */
+}
+
+.container div:not(: last-child ){
+    margin-right: 50px; /* use this instead to exclude last div has margin righuse this instead to exclude last div has margin rightt */
+}

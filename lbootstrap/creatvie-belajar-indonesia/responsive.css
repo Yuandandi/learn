@@ -1,0 +1,29 @@
+.kotak {
+    margin: 100px;
+    aspect-ratio: 1;
+    background-color: lightblue;
+    border: 1px solid #000;
+}
+
+/* more than this will not applied; */
+@media screen and (max-width: 768px) {
+    .kotak {
+        background-color: #000;
+    }
+}
+
+/* more than this will not applied; */
+@media screen and (max-width: 500px) {
+    .kotak {
+        background-color: green;
+    }
+}
+
+/* /1* between 300 and 500px *1/ */
+/* @media screen and (max-width: 500px) and (min-width: 300px) { */
+/*     .kotak { */
+/*         background-color: orange; */
+/*     } */
+/* } */
+
+

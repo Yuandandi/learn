@@ -1,0 +1,41 @@
+/* Universal Box-sizing; */
+*, *::before, *::after {
+    box-sizing: border-box; /* include the border and padding size into div calculation so the width and height is the actuall size of your div*/
+
+}
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    font-size: 2rem;
+    background-color: pink;
+    /* box model */
+    /* display: block; /1* take full one line (default properties of div)*1/ */
+    /* display: inline; /1* area until the margin *1/ */
+    width: 300px; /* display still block but wrap into this width and height size */
+    height: 100px;
+
+    /* padding-top: 32px; */
+    /* padding-right: 32px; */
+    /* padding-left: 32px; */
+    /* padding-bottom: 32px; */
+    /* padding: 32px; /1* shorthand four properties above *1/ */
+
+    /* padding: 32px 64px; /1* [top bottom] [right left] *1/ */
+    /* padding: 32px 64px 100px; /1* [top] [right left] [bottom] *1/ */
+    padding: 32px 64px 100px 10px; /* top right bottom left (clockwise)*/
+    border: 5px solid #000;
+
+    /* margin-top: 20px; */
+    /* margin-right: 20px; */
+    /* margin-bottom: 20px; */
+    /* margin-left: 20px; */
+    /* margin: 20px; /1* same as 4 above *1/ */
+
+    /* margin: 20px 40px; */
+    /* margin: 20px 40px 100px; */
+    /* margin: 20px 40px 100px 200px; */
+    /* margin: 0; /1* but the gap still there, there are margin of root element (we need css reset applied in above the code)*/ */
+}

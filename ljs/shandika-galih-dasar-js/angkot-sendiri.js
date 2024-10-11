@@ -1,4 +1,5 @@
 let listPenumpang = ["cakra", undefined, "wanto"];
+let listPenumpang = ["cakra", undefined, "wanto"];
 
 let penumpangNaik = function (namaPenumpang, listPenumpang) {
   if (listPenumpang.length === 0) {
