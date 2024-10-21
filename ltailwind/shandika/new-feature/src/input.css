@@ -1,0 +1,15 @@
+:root {
+    --warna-tema: 2 132 199;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kotak {
+    @apply w-[100px] h-[100px] opacity-20;
+    /* background-color: rgba(200, 0, 0, 0.4); */
+    /* to use colors in tailwind script wrap It in theme(properties name); */
+    /* 50% is the transparency; */
+    background-color: theme(colors.hijau / 50%);
+}
