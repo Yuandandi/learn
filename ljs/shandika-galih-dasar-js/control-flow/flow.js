@@ -1,6 +1,6 @@
 // {{{  Loop
-// execute until user click OK
-alert("mulai");
+    // execute until user click OK
+    alert("mulai");
 
 // there will be 6 alert of "Hello world";
 for (let i = 0; i < 5; i++) {

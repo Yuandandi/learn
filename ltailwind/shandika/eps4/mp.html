@@ -1,0 +1,47 @@
+<!-- {{{ Head-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belar Tailwind</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              '13': '3.25rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+* {
+  border: 1px solid red;
+}
+    </style>
+  </head>
+  <!-- }}} -->
+  <body style="height: 3000px">
+
+    <h1>Heading 1</h1>
+
+    <section>
+      <h2>heading 2</h2>
+      <p class="m-13">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur
+      cupidatat.</p>
+      <p class="py-4">padding y meaning top and bottom</p>
+    </section>
+    <section class="mb-10">
+        <h2>sizing</h2>
+        <div class="w-1/2 "></div>
+    </section>
+
+    <div class="max-w-xs min-h-screen">foo</div>
+    <div class="h-32 w-32">kotak</div>
+
+  </body>
+</html>

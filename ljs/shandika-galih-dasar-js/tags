@@ -32,33 +32,5 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	6.1.0	/v6.1.0/
 !_TAG_ROLE_DESCRIPTION!JavaScript!function	foreigndecl	/declared in foreign languages/
-angkotBeroperasi	angkot3.js	/^let angkotBeroperasi = 6;$/;"	v
-angkotBeroperasi	angkot4.js	/^let angkotBeroperasi = 6;$/;"	v
-angkotBeroperasi	angkot5.js	/^let angkotBeroperasi = 6;$/;"	v
-angkotBeroperasi	angkot6.js	/^let angkotBeroperasi = 6;$/;"	v
-comp	suit-sendiri.js	/^let comp = Math.random();$/;"	v
-comp	suit.js	/^  let comp = Math.random()$/;"	v
-hasil	suit.js	/^  let hasil = "";$/;"	v
-item	switch.js	/^let item = prompt("pick one of these item: \\n (nasi, ayam, telur, coca-cola, mie)");$/;"	v
-jmlAngkot	angkot3.js	/^let jmlAngkot = 10;$/;"	v
-jmlAngkot	angkot4.js	/^let jmlAngkot = 10;$/;"	v
-jmlAngkot	angkot5.js	/^let jmlAngkot = 10;$/;"	v
-jmlAngkot	angkot6.js	/^let jmlAngkot = 10;$/;"	v
-listPenumpang	angkot-sendiri.js	/^let listPenumpang = ["cakra", undefined, "wanto"];$/;"	v
 listPenumpang	hapus-penumpang.js	/^let listPenumpang = ["cakra", undefined, "wanto"];$/;"	v
-lulus	variable.js	/^var nama = "danzor", umur = 30, lulus = true;$/;"	v
-nama	variable.js	/^var nama = "danzor", umur = 30, lulus = true;$/;"	v
-noAngkot	angkot3.js	/^let noAngkot = 1;$/;"	v
-noAngkot	angkot4.js	/^let noAngkot = 1;$/;"	v
-noAngkot	angkot5.js	/^let noAngkot = 1;$/;"	v
-noAngkot	angkot6.js	/^let noAngkot = 1;$/;"	v
-number	if-else.js	/^var number = 3;$/;"	v
-number	odd-even.js	/^let number = 10; \/\/ even$/;"	v
-penumpang	kelola-angkot.js	/^let penumpang = ["sani", undefined ,"bram", undefined, "Joko"] ;$/;"	v
-penumpangNaik	angkot-sendiri.js	/^let penumpangNaik = function (namaPenumpang, listPenumpang) {$/;"	f
 tambahPenumpang	hapus-penumpang.js	/^let tambahPenumpang = function (namaPenumpang, listPenumpang) {$/;"	f
-tambahPenumpang	kelola-angkot.js	/^let tambahPenumpang = function (namaPenumpang, penumpang) {$/;"	f
-tanya	suit.js	/^let tanya = true;$/;"	v
-umur	variable.js	/^var nama = "danzor", umur = 30, lulus = true;$/;"	v
-user	suit.js	/^  let user = prompt("silahkan pilih salah satu: gajah, orang, semut");$/;"	v
-x	variable.js	/^var x; \/\/ declaration & initialization$/;"	v
