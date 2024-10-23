@@ -7,5 +7,5 @@ while (noAngkot <= angkotBeroperasi) {
 }
 
 for (noAngkot = angkotBeroperasi + 1; noAngkot <= jmlAngkot; noAngkot++) {
-  console.log(`Angkot No. ${noAngkot} sedang tidak beroperasi.`)
+    console.log(`Angkot No. ${noAngkot} sedang tidak beroperasi.`)
 }

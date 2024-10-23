@@ -32,5 +32,5 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	6.1.0	/v6.1.0/
 !_TAG_ROLE_DESCRIPTION!JavaScript!function	foreigndecl	/declared in foreign languages/
-listPenumpang	hapus-penumpang.js	/^let listPenumpang = ["cakra", undefined, "wanto"];$/;"	v
-tambahPenumpang	hapus-penumpang.js	/^let tambahPenumpang = function (namaPenumpang, listPenumpang) {$/;"	f
+demon	foo.js	/^function demon() $/;"	f
+listPenumpang	foo.js	/^let listPenumpang = ["chakra", undefined, "wanto"]$/;"	v
